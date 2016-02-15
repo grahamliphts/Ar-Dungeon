@@ -1,0 +1,755 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: .25
+    backfaceThreshold: 100
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 6
+  m_Fog: 0
+  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: .00999999978
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: .211999997, g: .226999998, b: .259000003, a: 1}
+  m_AmbientEquatorColor: {r: .114, g: .125, b: .133000001, a: 1}
+  m_AmbientGroundColor: {r: .0469999984, g: .0430000015, b: .0350000001, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: .5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 5
+  m_GIWorkflowMode: 0
+  m_LightmapsMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 1
+  m_LightmapEditorSettings:
+    serializedVersion: 3
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_AOMaxDistance: 1
+    m_Padding: 2
+    m_CompAOExponent: 0
+    m_LightmapParameters: {fileID: 0}
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherRayCount: 1024
+    m_ReflectionCompression: 2
+  m_LightmapSnapshot: {fileID: 0}
+  m_RuntimeCPUUsage: 25
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentRadius: .5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: .400000006
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    accuratePlacement: 0
+    minRegionArea: 2
+    cellSize: .166666672
+    manualCellSize: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &215027913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 215027914}
+  - 20: {fileID: 215027918}
+  - 124: {fileID: 215027917}
+  - 92: {fileID: 215027916}
+  - 81: {fileID: 215027915}
+  - 114: {fileID: 215027919}
+  m_Layer: 10
+  m_Name: MainCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &215027914
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215027913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1208817454}
+  m_RootOrder: 0
+--- !u!81 &215027915
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215027913}
+  m_Enabled: 1
+--- !u!92 &215027916
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215027913}
+  m_Enabled: 1
+--- !u!124 &215027917
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215027913}
+  m_Enabled: 1
+--- !u!20 &215027918
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215027913}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
+--- !u!114 &215027919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215027913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac62947536a3704295fb870f025f1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventReceiver: {fileID: 0}
+  Stereo: 0
+  StereoEye: 1
+  Optical: 0
+  OpticalParamsFilenameIndex: 0
+  OpticalParamsFilename: 
+  OpticalParamsFileContents: 
+  OpticalEyeLateralOffsetRight: 0
+--- !u!1 &592927345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 592927346}
+  - 33: {fileID: 592927349}
+  - 65: {fileID: 592927348}
+  - 23: {fileID: 592927347}
+  - 82: {fileID: 592927350}
+  m_Layer: 10
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &592927346
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592927345}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .0799999982, y: .0799999982, z: .0799999982}
+  m_Children: []
+  m_Father: {fileID: 1047460884}
+  m_RootOrder: 0
+--- !u!23 &592927347
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592927345}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &592927348
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592927345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &592927349
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592927345}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &592927350
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592927345}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a7e8569fd63d54851a85c5ee83306709, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!1 &1047460880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1047460884}
+  - 114: {fileID: 1047460885}
+  m_Layer: 10
+  m_Name: Cube-ar-render
+  m_TagString: mark
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1047460884
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1047460880}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 592927346}
+  m_Father: {fileID: 1208817454}
+  m_RootOrder: 1
+--- !u!114 &1047460885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1047460880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e02d1ce5da0c446acaea956b6ae07690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsToRemainVisible: 1
+  eventReceiver: {fileID: 0}
+  _markerTag: mark
+--- !u!1 &1140009212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1140009213}
+  - 108: {fileID: 1140009214}
+  m_Layer: 10
+  m_Name: Directional light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1140009213
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1140009212}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!108 &1140009214
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1140009212}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
+--- !u!1 &1208817452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1208817454}
+  - 114: {fileID: 1208817453}
+  m_Layer: 10
+  m_Name: Scene root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1208817453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208817452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365d48fee229c499493cd3bcf4e7a59d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  findMarkerTags:
+  - mark
+  _findMarkerMode: 0
+--- !u!4 &1208817454
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208817452}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 215027914}
+  - {fileID: 1047460884}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+--- !u!1 &2086648230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2086648232}
+  - 114: {fileID: 2086648231}
+  - 114: {fileID: 2086648233}
+  m_Layer: 0
+  m_Name: ARController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2086648231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2086648230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4ec33cee90c844ea1bcc2cd642033e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseNativeGLTexturingIfAvailable: 1
+  AllowNonRGBVideo: 0
+  QuitOnEscOrBack: 1
+  AutoStartAR: 1
+  videoCParamName0: camera_para
+  videoConfigurationWindows0: -showDialog -flipV
+  videoConfigurationMacOSX0: -width=640 -height=480
+  videoConfigurationiOS0: 
+  videoConfigurationAndroid0: 
+  videoConfigurationWindowsStore0: -device=WinMC -format=BGRA -position=rear
+  videoConfigurationLinux0: 
+  BackgroundLayer0: 8
+  VideoIsStereo: 0
+  transL2RName: transL2R
+  videoCParamName1: camera_paraR
+  videoConfigurationWindows1: -devNum=2 -showDialog -flipV
+  videoConfigurationMacOSX1: -source=1 -width=640 -height=480
+  videoConfigurationiOS1: 
+  videoConfigurationAndroid1: 
+  videoConfigurationWindowsStore1: -device=WinMC -format=BGRA
+  videoConfigurationLinux1: 
+  BackgroundLayer1: 9
+  NearPlane: .00999999978
+  FarPlane: 5
+  ContentRotate90: 0
+  ContentFlipH: 0
+  ContentFlipV: 0
+  ContentAlign: 4
+  currentContentMode: 1
+  currentThresholdMode: 0
+  currentThreshold: 100
+  currentLabelingMode: 1
+  currentTemplateSize: 16
+  currentTemplateCountMax: 25
+  currentBorderSize: .25
+  currentPatternDetectionMode: 0
+  currentMatrixCodeType: 3
+  currentImageProcMode: 0
+  currentUseVideoBackground: 1
+  currentNFTMultiMode: 0
+  currentLogLevel: 1
+  scrollPosition: {x: 0, y: 0}
+--- !u!4 &2086648232
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2086648230}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+--- !u!114 &2086648233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2086648230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed68815202b64d4c956d71c0f176088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MarkerType: 0
+  Tag: mark
+  PatternFilenameIndex: 2
+  PatternFilename: phone.hiro
+  PatternContents: " 255 253 253 252 253 252 252 253 253 252 253 253 253 254 252 253\r\n
+    255 252 254 254 254 254 254 254 254 254 254 254 254 254 253 252\r\n 255 254 254
+    254 254 254 254 254 254 254 254 254 254 254 253 251\r\n 255 254 254 254 254 254
+    254 254 254 254 254 254 254 254 254 251\r\n 255 254 254 254 254 254 254 254 254
+    254 254 254 254 254 254 251\r\n 255 254 254 254 254 254 254 254 254 254 254 254
+    254 254 254 254\r\n 254 252 254 254 254 254 254 254 254 254 254 254 254 254 254
+    254\r\n 253 252 254 254 254 254 254 254 254 254 254 254 254 254 254 254\r\n 253
+    252 254 253 254 253 253 254 254 254 254 254 254 254 254 254\r\n 250 252 252 253
+    248 254 245 254 253 253 254 254 254 254 254 254\r\n 229 244 254 254 214 255 237
+    254 253 254 254 254 254 254 253 254\r\n 235 237 255 253 222 255 226 251 246 240
+    251 253 233 243 240 255\r\n 232 237 247 235 222 255 226 243 232 232 255 228 241
+    255 231 237\r\n 226 238 255 246 217 255 211 247 225 243 255 227 243 255 240 232\r\n
+    227 240 255 249 212 255 213 249 227 241 255 238 230 254 233 246\r\n 251 253 254
+    255 243 255 235 252 243 249 255 255 237 238 246 255\r\n 255 254 254 254 254 254
+    254 254 254 254 254 254 254 254 255 255\r\n 255 254 254 254 254 254 254 254 254
+    254 254 254 254 254 254 255\r\n 255 254 254 254 254 254 254 254 254 254 254 254
+    254 254 254 255\r\n 255 254 254 254 254 254 254 254 254 254 254 254 254 254 254
+    255\r\n 255 254 254 254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 255
+    254 254 254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 255 254 254 254
+    254 254 254 254 254 254 254 254 254 254 254 254\r\n 255 254 254 254 254 254 254
+    254 254 254 254 254 254 254 254 254\r\n 255 254 254 254 254 254 254 254 254 254
+    254 254 254 254 254 254\r\n 245 250 254 254 242 255 238 251 254 254 254 254 254
+    254 254 254\r\n 205 234 255 254 177 249 230 249 255 254 254 254 254 254 254 254\r\n
+    202 207 253 243 174 250 195 241 227 204 238 249 194 195 209 255\r\n 187 169 202
+    183 162 254 183 226 197 194 252 205 215 255 211 219\r\n 196 213 255 238 175 255
+    167 234 200 223 255 199 231 255 229 213\r\n 206 224 255 245 174 255 182 238 209
+    227 255 227 200 239 200 233\r\n 248 251 255 255 238 255 225 250 240 247 255 255
+    220 206 234 255\r\n 232 248 249 249 249 249 250 249 249 249 249 249 249 248 248
+    242\r\n 233 249 254 254 254 254 254 254 254 254 254 254 254 254 253 242\r\n 233
+    252 254 254 254 254 254 254 254 254 254 254 254 254 253 243\r\n 235 252 254 254
+    254 254 254 254 254 254 254 254 254 254 254 245\r\n 235 252 254 254 254 254 254
+    254 254 254 254 254 254 254 254 246\r\n 230 251 254 254 254 254 254 254 254 254
+    254 254 254 254 254 243\r\n 233 251 254 254 254 254 254 254 254 254 254 254 254
+    254 254 246\r\n 237 252 254 254 254 254 254 254 254 254 254 254 254 254 254 247\r\n
+    239 252 254 252 251 252 253 254 254 254 254 254 254 254 254 247\r\n 195 207 242
+    241 201 224 201 220 246 253 254 254 254 254 254 247\r\n 130 178 234 232 111 202
+    176 207 229 233 242 248 239 232 235 244\r\n 120 123 189 178  89 193 117 181 161
+    120 162 203 125 122 142 216\r\n 113  95 139 107  73 195 105 160 127 127 219 150
+    158 229 167 159\r\n 134 154 234 205  98 200  85 164 136 172 230 142 180 237 189
+    149\r\n 147 168 236 216 106 209 110 177 151 175 235 188 131 171 124 174\r\n 210
+    222 239 239 212 231 186 217 206 221 241 242 183 150 184 229\r\n\r\n 253 252 251
+    251 251 254 254 254 254 254 254 255 237 232 246 255\r\n 252 253 253 254 254 254
+    254 254 254 254 253 240 231 240 233 246\r\n 254 254 254 254 254 254 254 254 254
+    254 254 243 255 255 254 238\r\n 253 254 254 254 254 254 254 254 254 254 254 233
+    241 243 230 237\r\n 253 254 254 254 254 254 254 254 254 254 254 253 228 227 238
+    255\r\n 253 254 254 254 254 254 254 254 254 254 254 251 255 255 255 255\r\n 252
+    254 254 254 254 254 254 254 254 253 254 240 232 243 241 249\r\n 253 254 254 254
+    254 254 254 254 254 253 253 246 232 225 227 243\r\n 253 254 254 254 254 254 254
+    254 254 254 254 251 243 247 249 252\r\n 252 254 254 254 254 254 254 254 253 245
+    237 226 226 211 213 235\r\n 252 254 254 254 254 254 254 254 253 254 255 255 255
+    255 255 255\r\n 253 254 254 254 254 254 254 254 254 248 214 222 222 217 212 243\r\n
+    252 254 254 254 254 254 254 254 253 253 254 253 235 246 249 255\r\n 253 254 254
+    254 254 254 254 254 254 252 254 255 247 255 255 254\r\n 253 252 254 254 254 254
+    252 252 252 252 244 237 237 238 240 253\r\n 255 255 255 255 255 255 254 253 253
+    250 229 235 232 226 227 251\r\n 255 255 255 255 255 255 254 254 254 254 254 255
+    219 213 233 255\r\n 255 254 254 254 254 254 254 254 254 254 254 209 211 229 200
+    234\r\n 254 254 254 254 254 254 254 254 254 254 254 195 255 255 239 206\r\n 254
+    254 254 254 254 254 254 254 254 254 254 194 215 231 200 220\r\n 254 254 254 254
+    254 254 254 254 254 254 254 249 205 199 227 255\r\n 254 254 254 254 254 254 254
+    254 254 254 254 238 252 255 255 255\r\n 254 254 254 254 254 254 254 254 254 254
+    254 204 194 223 227 247\r\n 254 254 254 254 254 254 254 254 254 254 255 227 197
+    200 209 240\r\n 254 254 254 254 254 254 254 254 254 251 249 241 226 234 238 250\r\n
+    254 254 254 254 254 254 254 254 254 238 230 195 183 167 182 225\r\n 254 254 254
+    254 254 254 254 254 254 255 249 250 254 255 255 255\r\n 254 254 254 254 254 254
+    254 254 254 242 177 174 162 175 174 238\r\n 254 254 254 254 254 254 254 254 254
+    254 254 243 183 238 245 255\r\n 254 254 254 254 254 254 254 254 254 254 255 253
+    202 255 255 255\r\n 254 254 254 254 254 254 254 254 254 250 234 207 169 213 224
+    251\r\n 255 255 255 255 255 255 255 255 255 245 205 202 187 196 206 248\r\n 242
+    242 243 245 246 243 246 247 247 247 244 216 159 149 174 229\r\n 248 253 253 254
+    254 254 254 254 254 254 235 142 167 189 124 184\r\n 248 254 254 254 254 254 254
+    254 254 254 232 122 229 237 171 150\r\n 249 254 254 254 254 254 254 254 254 254
+    239 125 158 180 131 183\r\n 249 254 254 254 254 254 254 254 254 254 248 203 150
+    142 188 242\r\n 249 254 254 254 254 254 254 254 254 254 242 162 219 230 235 241\r\n
+    249 254 254 254 254 254 254 254 254 253 233 120 127 172 175 221\r\n 249 254 254
+    254 254 254 254 254 254 246 229 161 127 136 151 206\r\n 249 254 254 254 254 254
+    254 254 254 220 207 181 160 164 177 217\r\n 250 254 254 254 254 254 254 254 253
+    201 176 117 105  85 110 186\r\n 249 254 254 254 254 254 254 254 252 224 202 193
+    195 200 209 231\r\n 249 254 254 254 254 254 254 254 251 201 111  89  73  98 106
+    212\r\n 249 254 254 254 254 254 254 254 252 241 232 178 107 205 216 239\r\n 249
+    254 254 254 254 254 254 254 254 242 234 189 139 234 236 239\r\n 248 249 252 252
+    252 251 251 252 252 207 178 123  95 154 168 222\r\n 232 233 233 235 235 230 233
+    237 239 195 130 120 113 134 147 210\r\n\r\n 255 246 238 237 255 255 249 243 252
+    235 255 243 255 254 253 251\r\n 246 233 254 230 238 255 241 227 249 213 255 212
+    249 255 240 227\r\n 232 240 255 243 227 255 243 225 247 211 255 217 246 255 238
+    226\r\n 237 231 255 241 228 255 232 232 243 226 255 222 235 247 237 232\r\n 255
+    240 243 233 253 251 240 246 251 226 255 222 253 255 237 235\r\n 254 253 254 254
+    254 254 254 253 254 237 255 214 254 254 244 229\r\n 254 254 254 254 254 254 253
+    253 254 245 254 248 253 252 252 250\r\n 254 254 254 254 254 254 254 254 254 253
+    253 254 253 254 252 253\r\n 254 254 254 254 254 254 254 254 254 254 254 254 254
+    254 252 253\r\n 254 254 254 254 254 254 254 254 254 254 254 254 254 254 252 254\r\n
+    254 254 254 254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 251 254 254
+    254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 251 254 254 254 254 254
+    254 254 254 254 254 254 254 254 254 255\r\n 251 253 254 254 254 254 254 254 254
+    254 254 254 254 254 254 255\r\n 252 253 254 254 254 254 254 254 254 254 254 254
+    254 254 252 255\r\n 253 252 254 253 253 253 252 253 253 252 252 253 252 253 253
+    255\r\n 255 234 206 220 255 255 247 240 250 225 255 238 255 255 251 248\r\n 233
+    200 239 200 227 255 227 209 238 182 255 174 245 255 224 206\r\n 213 229 255 231
+    199 255 223 200 234 167 255 175 238 255 213 196\r\n 219 211 255 215 205 252 194
+    197 226 183 254 162 183 202 169 187\r\n 255 209 195 194 249 238 204 227 241 195
+    250 174 243 253 207 202\r\n 254 254 254 254 254 254 254 255 249 230 249 177 254
+    255 234 205\r\n 254 254 254 254 254 254 254 254 251 238 255 242 254 254 250 245\r\n
+    254 254 254 254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 254 254 254
+    254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 254 254 254 254 254 254
+    254 254 254 254 254 254 254 254 254 255\r\n 255 254 254 254 254 254 254 254 254
+    254 254 254 254 254 254 255\r\n 255 254 254 254 254 254 254 254 254 254 254 254
+    254 254 254 255\r\n 255 254 254 254 254 254 254 254 254 254 254 254 254 254 254
+    255\r\n 255 254 254 254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 255
+    254 254 254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 255 255 254 254
+    254 254 254 254 254 254 254 254 254 254 254 255\r\n 229 184 150 183 242 241 221
+    206 217 186 231 212 239 239 222 210\r\n 174 124 171 131 188 235 175 151 177 110
+    209 106 216 236 168 147\r\n 149 189 237 180 142 230 172 136 164  85 200  98 205
+    234 154 134\r\n 159 167 229 158 150 219 127 127 160 105 195  73 107 139  95 113\r\n
+    216 142 122 125 203 162 120 161 181 117 193  89 178 189 123 120\r\n 244 235 232
+    239 248 242 233 229 207 176 202 111 232 234 178 130\r\n 247 254 254 254 254 254
+    253 246 220 201 224 201 241 242 207 195\r\n 247 254 254 254 254 254 254 254 254
+    253 252 251 252 254 252 239\r\n 247 254 254 254 254 254 254 254 254 254 254 254
+    254 254 252 237\r\n 246 254 254 254 254 254 254 254 254 254 254 254 254 254 251
+    233\r\n 243 254 254 254 254 254 254 254 254 254 254 254 254 254 251 230\r\n 246
+    254 254 254 254 254 254 254 254 254 254 254 254 254 252 235\r\n 245 254 254 254
+    254 254 254 254 254 254 254 254 254 254 252 235\r\n 243 253 254 254 254 254 254
+    254 254 254 254 254 254 254 252 233\r\n 242 253 254 254 254 254 254 254 254 254
+    254 254 254 254 249 233\r\n 242 248 248 249 249 249 249 249 249 250 249 249 249
+    249 248 232\r\n\r\n 251 227 226 232 235 229 250 253 253 254 255 255 255 255 255
+    255\r\n 253 240 238 237 237 244 252 252 252 252 254 254 254 254 252 253\r\n 254
+    255 255 247 255 254 252 254 254 254 254 254 254 254 254 253\r\n 255 249 246 235
+    253 254 253 253 254 254 254 254 254 254 254 252\r\n 243 212 217 222 222 214 248
+    254 254 254 254 254 254 254 254 253\r\n 255 255 255 255 255 255 254 253 254 254
+    254 254 254 254 254 252\r\n 235 213 211 226 226 237 245 253 254 254 254 254 254
+    254 254 252\r\n 252 249 247 243 251 254 254 254 254 254 254 254 254 254 254 253\r\n
+    243 227 225 232 246 253 253 254 254 254 254 254 254 254 254 253\r\n 249 241 243
+    232 240 254 253 254 254 254 254 254 254 254 254 252\r\n 255 255 255 255 251 254
+    254 254 254 254 254 254 254 254 254 253\r\n 255 238 227 228 253 254 254 254 254
+    254 254 254 254 254 254 253\r\n 237 230 243 241 233 254 254 254 254 254 254 254
+    254 254 254 253\r\n 238 254 255 255 243 254 254 254 254 254 254 254 254 254 254
+    254\r\n 246 233 240 231 240 253 254 254 254 254 254 254 254 253 253 252\r\n 255
+    246 232 237 255 254 254 254 254 254 254 251 251 251 252 253\r\n 248 206 196 187
+    202 205 245 255 255 255 255 255 255 255 255 255\r\n 251 224 213 169 207 234 250
+    254 254 254 254 254 254 254 254 254\r\n 255 255 255 202 253 255 254 254 254 254
+    254 254 254 254 254 254\r\n 255 245 238 183 243 254 254 254 254 254 254 254 254
+    254 254 254\r\n 238 174 175 162 174 177 242 254 254 254 254 254 254 254 254 254\r\n
+    255 255 255 254 250 249 255 254 254 254 254 254 254 254 254 254\r\n 225 182 167
+    183 195 230 238 254 254 254 254 254 254 254 254 254\r\n 250 238 234 226 241 249
+    251 254 254 254 254 254 254 254 254 254\r\n 240 209 200 197 227 255 254 254 254
+    254 254 254 254 254 254 254\r\n 247 227 223 194 204 254 254 254 254 254 254 254
+    254 254 254 254\r\n 255 255 255 252 238 254 254 254 254 254 254 254 254 254 254
+    254\r\n 255 227 199 205 249 254 254 254 254 254 254 254 254 254 254 254\r\n 220
+    200 231 215 194 254 254 254 254 254 254 254 254 254 254 254\r\n 206 239 255 255
+    195 254 254 254 254 254 254 254 254 254 254 254\r\n 234 200 229 211 209 254 254
+    254 254 254 254 254 254 254 254 255\r\n 255 233 213 219 255 254 254 254 254 254
+    255 255 255 255 255 255\r\n 210 147 134 113 120 130 195 239 237 233 230 235 235
+    233 233 232\r\n 222 168 154  95 123 178 207 252 252 251 251 252 252 252 249 248\r\n
+    239 236 234 139 189 234 242 254 254 254 254 254 254 254 254 249\r\n 239 216 205
+    107 178 232 241 252 254 254 254 254 254 254 254 249\r\n 212 106  98  73  89 111
+    201 251 254 254 254 254 254 254 254 249\r\n 231 209 200 195 193 202 224 252 254
+    254 254 254 254 254 254 249\r\n 186 110  85 105 117 176 201 253 254 254 254 254
+    254 254 254 250\r\n 217 177 164 160 181 207 220 254 254 254 254 254 254 254 254
+    249\r\n 206 151 136 127 161 229 246 254 254 254 254 254 254 254 254 249\r\n 221
+    175 172 127 120 233 253 254 254 254 254 254 254 254 254 249\r\n 241 235 230 219
+    162 242 254 254 254 254 254 254 254 254 254 249\r\n 242 188 142 150 203 248 254
+    254 254 254 254 254 254 254 254 249\r\n 183 131 180 158 125 239 254 254 254 254
+    254 254 254 254 254 249\r\n 150 171 237 229 122 232 254 254 254 254 254 254 254
+    254 254 248\r\n 184 124 189 167 142 235 254 254 254 254 254 254 254 253 253 248\r\n
+    229 174 149 159 216 244 247 247 247 246 243 246 245 243 242 242\r\n\r\n"
+  PatternWidth: .0799999982
+  BarcodeID: 0
+  MultiConfigFile: 
+  NFTDataName: 
+  currentUseContPoseEstimation: 0
+  currentFiltered: 0
+  currentFilterSampleRate: 30
+  currentFilterCutoffFreq: 15
+  currentNFTScale: 1
