@@ -19,7 +19,7 @@ public class UI_Manager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        showView("stuff");
+        showView("AR");
     }
 
     // Update is called once per frame
@@ -30,7 +30,7 @@ public class UI_Manager : MonoBehaviour
 
     public void ReceiveButton(string name)
     {
-        Debug.Log("Button : " + name + " Received");
+       // Debug.Log("Button : " + name + " Received");
         showView(name);
     }
 
@@ -87,7 +87,12 @@ public class UI_Manager : MonoBehaviour
                 m_StuffView.SetActive(false);
                 break;
             case "AR":
-                Debug.Log("Switch to AR mode");
+                m_StatView.SetActive(false);
+                m_SavesView.SetActive(false);
+                m_Bag_View.SetActive(false);
+                m_NotesView.SetActive(false);
+                m_Abilities_View.SetActive(false);
+                m_StuffView.SetActive(false);
                 break;
             default:
                 m_StatView.SetActive(false);
