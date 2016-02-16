@@ -8,25 +8,25 @@ SceneSettings:
   m_PVSPortalsArray: []
   m_OcclusionBakeSettings:
     smallestOccluder: 5
-    smallestHole: 0.25
+    smallestHole: .25
     backfaceThreshold: 100
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
   m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: .00999999978
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientSkyColor: {r: .211999997, g: .226999998, b: .259000003, a: 1}
+  m_AmbientEquatorColor: {r: .114, g: .125, b: .133000001, a: 1}
+  m_AmbientGroundColor: {r: .0469999984, g: .0430000015, b: .0350000001, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SkyboxMaterial: {fileID: 0}
-  m_HaloStrength: 0.5
+  m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -40,7 +40,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 6
+  serializedVersion: 5
   m_GIWorkflowMode: 0
   m_LightmapsMode: 1
   m_GISettings:
@@ -66,7 +66,7 @@ LightmapSettings:
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 0}
+  m_LightmapSnapshot: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
 NavMeshSettings:
@@ -74,15 +74,15 @@ NavMeshSettings:
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 2
-    agentRadius: 0.5
+    agentRadius: .5
     agentHeight: 2
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: .400000006
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     accuratePlacement: 0
     minRegionArea: 2
-    cellSize: 0.16666667
+    cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &215027913
@@ -147,14 +147,14 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: .300000012
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -170,7 +170,7 @@ Camera:
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
+  m_StereoSeparation: .0219999999
   m_StereoMirrorMode: 0
 --- !u!114 &215027919
 MonoBehaviour:
@@ -191,6 +191,49 @@ MonoBehaviour:
   OpticalParamsFilename: 
   OpticalParamsFileContents: 
   OpticalEyeLateralOffsetRight: 0
+--- !u!1 &547372732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 547372733}
+  - 114: {fileID: 547372734}
+  m_Layer: 10
+  m_Name: Field
+  m_TagString: mark
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &547372733
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547372732}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1839648905}
+  m_Father: {fileID: 1208817454}
+  m_RootOrder: 2
+--- !u!114 &547372734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547372732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e02d1ce5da0c446acaea956b6ae07690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsToRemainVisible: 1
+  eventReceiver: {fileID: 0}
+  _markerTag: field
 --- !u!1 &592927345
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,7 +261,7 @@ Transform:
   m_GameObject: {fileID: 592927345}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
+  m_LocalScale: {x: .0799999982, y: .0799999982, z: .0799999982}
   m_Children: []
   m_Father: {fileID: 1047460884}
   m_RootOrder: 0
@@ -232,7 +275,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6ed673bd51d504aeea0df9211057f85e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -243,7 +286,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
@@ -307,7 +350,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -318,7 +360,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -329,7 +370,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -340,7 +380,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &621587463
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,14 +429,14 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: .300000012
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -413,7 +452,7 @@ Camera:
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
+  m_StereoSeparation: .0219999999
   m_StereoMirrorMode: 0
 --- !u!4 &621587468
 Transform:
@@ -422,105 +461,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 621587463}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.8776608, y: -5.7961855, z: 10.53125}
+  m_LocalPosition: {x: 5.87766075, y: -5.79618549, z: 10.53125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
---- !u!1001 &895730784
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22450514, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22356764, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_RenderMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11451218, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_Text
-      value: PV
-      objectReference: {fileID: 0}
-    - target: {fileID: 130916, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: cfbf02110ba9e1b419dee851f702a299, type: 2}
-  m_IsPrefabParent: 0
+  m_RootOrder: 3
 --- !u!1 &1047460880
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,7 +476,7 @@ GameObject:
   - 4: {fileID: 1047460884}
   - 114: {fileID: 1047460885}
   m_Layer: 10
-  m_Name: Cube-ar-render
+  m_Name: Character
   m_TagString: mark
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -563,7 +508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   secondsToRemainVisible: 1
   eventReceiver: {fileID: 0}
-  _markerTag: mark
+  _markerTag: character
 --- !u!1 &1140009212
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,12 +531,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1140009212}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!108 &1140009214
 Light:
   m_ObjectHideFlags: 0
@@ -610,9 +555,8 @@ Light:
     m_Type: 0
     m_Resolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
@@ -661,14 +605,251 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1208817452}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 215027914}
   - {fileID: 1047460884}
+  - {fileID: 547372733}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
+--- !u!1001 &1663062728
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22495034, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 163742, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 168442, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c45892ad73e14c241baf451492c6e640, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1839648904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1839648905}
+  - 33: {fileID: 1839648909}
+  - 65: {fileID: 1839648908}
+  - 23: {fileID: 1839648907}
+  - 82: {fileID: 1839648906}
+  m_Layer: 10
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1839648905
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1839648904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .0799999982, y: .0799999982, z: .0799999982}
+  m_Children: []
+  m_Father: {fileID: 547372733}
+  m_RootOrder: 0
+--- !u!82 &1839648906
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1839648904}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a7e8569fd63d54851a85c5ee83306709, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!23 &1839648907
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1839648904}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 8c983c5e595724775bdcdb163f7ff6a5, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &1839648908
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1839648904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1839648909
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1839648904}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2086648230
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,6 +860,7 @@ GameObject:
   - 4: {fileID: 2086648232}
   - 114: {fileID: 2086648231}
   - 114: {fileID: 2086648233}
+  - 114: {fileID: 2086648234}
   m_Layer: 0
   m_Name: ARController
   m_TagString: Untagged
@@ -719,7 +901,7 @@ MonoBehaviour:
   videoConfigurationWindowsStore1: -device=WinMC -format=BGRA
   videoConfigurationLinux1: 
   BackgroundLayer1: 9
-  NearPlane: 0.01
+  NearPlane: .00999999978
   FarPlane: 5
   ContentRotate90: 0
   ContentFlipH: 0
@@ -731,7 +913,7 @@ MonoBehaviour:
   currentLabelingMode: 1
   currentTemplateSize: 16
   currentTemplateCountMax: 25
-  currentBorderSize: 0.25
+  currentBorderSize: .25
   currentPatternDetectionMode: 0
   currentMatrixCodeType: 3
   currentImageProcMode: 0
@@ -750,7 +932,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &2086648233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -763,173 +945,360 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MarkerType: 0
-  Tag: mark
+  Tag: character
+  PatternFilenameIndex: 3
+  PatternFilename: patt.myhiro
+  PatternContents: " 209 230 231 238 240 240 241 242 246 248 247 248 252 251 248 241\r\n
+    217 240 243 248 250 251 251 255 252 254 253 254 254 255 255 251\r\n 222 246 249
+    248 254 251 254 255 255 255 255 255 255 255 255 250\r\n 221 252 253 253 252 253
+    255 254 255 255 255 255 255 255 255 245\r\n 230 246 247 252 252 254 254 255 254
+    255 255 255 255 255 255 242\r\n 235 251 254 254 254 255 255 255 254 255 255 255
+    255 255 255 240\r\n 227 245 246 253 255 255 254 255 255 255 255 255 255 255 255
+    251\r\n 216 249 252 255 255 255 255 255 255 255 255 255 255 255 255 255\r\n 212
+    249 253 254 254 254 254 255 255 255 255 255 255 255 255 255\r\n 201 202 251 250
+    197 243 203 226 255 255 255 255 255 255 255 255\r\n 160 136 243 248 120 222 163
+    203 248 248 248 255 239 238 252 254\r\n 156 119 201 203 109 223 134 181 159 137
+    202 177 142 147 169 249\r\n 163  77 123 142 101 224 139 175 152 187 240 124 242
+    251 150 228\r\n 164 118 240 245 108 215 140 181 152 184 236 132 247 254 161 226\r\n
+    170 135 247 246 112 202 141 182 151 183 251 152 165 185 156 240\r\n 199 219 239
+    243 224 244 218 232 236 241 254 246 205 198 247 240\r\n 164 170 172 176 177 178
+    180 178 181 181 181 182 183 184 183 175\r\n 170 175 177 175 180 183 183 183 185
+    184 186 188 189 189 190 178\r\n 171 173 176 178 182 183 187 184 185 187 188 188
+    189 192 191 181\r\n 175 177 177 183 183 185 185 184 189 187 187 190 190 190 194
+    178\r\n 177 178 179 181 184 184 183 187 189 190 191 191 192 191 192 175\r\n 178
+    181 182 182 182 184 186 187 189 189 192 193 195 194 195 176\r\n 182 184 184 182
+    184 184 188 186 190 192 194 194 194 194 197 189\r\n 180 183 183 185 186 185 189
+    189 189 192 194 194 196 197 196 193\r\n 174 181 184 183 186 188 188 189 192 192
+    196 197 198 199 198 194\r\n 150 142 184 185 136 180 135 164 193 195 198 200 197
+    197 199 193\r\n 113 100 184 175  65 167  99 147 188 188 187 196 183 185 199 192\r\n
+    110  90 157 143  58 168  68 130  95  80 143 116  75  79 119 192\r\n 108  37  70
+    \ 74  53 170  76 129  86 136 173  60 185 185  82 167\r\n 108  74 184 175  60 173
+    \ 79 134  86 131 166  73 193 196  89 163\r\n 116  79 185 176  58 154  76 138  82
+    124 191  81 117 124  84 179\r\n 164 162 183 183 159 182 150 172 169 184 197 182
+    129 129 191 180\r\n 101 100  99 101  97  98 102  98  99 100 104 103 104 102 102
+    \ 95\r\n 105  98  99 101  96  97 100  97  96  99 101 105 106 103 105 101\r\n 107
+    \ 99 102 103  99  99  99  98 102 102 105 104 101 103 103  89\r\n  99  98 101  97
+    \ 97 101 104 100 101 105 105 104 106 103 100  88\r\n 107  97  99  96  97 100 101
+    100 100 104 108 105 109 109 101  89\r\n 108  97  98  98  99 100 103 102 101 103
+    110 105 110 110 107  86\r\n 102  93  97 100 103  99 104 107 105 102 105 109 110
+    109 107  96\r\n 103 100  99 101 104 105 104 105 105 109 112 109 108 109 110 102\r\n
+    \ 97  98  98  99 104 105 104 106 107 108 109 108 109 109 113 105\r\n  87  80 101
+    \ 94  60 104  64  91 107 108 107 105 112 110 112 105\r\n  49  51 103  95   9  90
+    \ 26  78 104 108 106 107  95 102 114 105\r\n  51  42  91  70   6  94   6  71  29
+    \ 19  68  44  11  18  53 105\r\n  51   2  23  18  10  99  20  72  24  80  91  13
+    111 100  18  97\r\n  45  25 105  81   8 105  19  70  23  69  82  21 119 109  21
+    \ 90\r\n  53  29 107  86   3  88  18  77  22  63 102  19  59  58  27  99\r\n  97
+    \ 90 100  95  76  98  71  95  90  97 114  98  55  59 114  94\r\n\r\n 241 251 250
+    245 242 240 251 255 255 255 254 249 228 226 240 240\r\n 248 255 255 255 255 255
+    255 255 255 255 252 169 150 161 156 247\r\n 251 255 255 255 255 255 255 255 255
+    255 238 147 251 254 185 198\r\n 252 254 255 255 255 255 255 255 255 255 239 142
+    242 247 165 205\r\n 248 254 255 255 255 255 255 255 255 255 255 177 124 132 152
+    246\r\n 247 253 255 255 255 255 255 255 255 255 248 202 240 236 251 254\r\n 248
+    254 255 255 255 255 255 255 255 255 248 137 187 184 183 241\r\n 246 252 255 255
+    254 254 255 255 255 255 248 159 152 152 151 236\r\n 242 255 255 254 255 255 255
+    255 255 226 203 181 175 181 182 232\r\n 241 251 254 255 254 255 254 255 254 203
+    163 134 139 140 141 218\r\n 240 251 251 253 254 255 255 255 254 243 222 223 224
+    215 202 244\r\n 240 250 254 252 252 254 255 255 254 197 120 109 101 108 112 224\r\n
+    238 248 248 253 252 254 253 255 254 250 248 203 142 245 246 243\r\n 231 243 249
+    253 247 254 246 252 253 251 243 201 123 240 247 239\r\n 230 240 246 252 246 251
+    245 249 249 202 136 119  77 118 135 219\r\n 209 217 222 221 230 235 227 216 212
+    201 160 156 163 164 170 199\r\n 175 178 181 178 175 176 189 193 194 193 192 192
+    167 163 179 180\r\n 183 190 191 194 192 195 197 196 198 199 199 119  82  89  84
+    191\r\n 184 189 192 190 191 194 194 197 199 197 185  79 185 196 124 129\r\n 183
+    189 189 190 192 195 194 196 198 197 183  75 185 193 117 129\r\n 182 188 188 190
+    191 193 194 194 197 200 196 116  60  73  81 182\r\n 181 186 188 187 191 192 194
+    194 196 198 187 143 173 166 191 197\r\n 181 184 187 187 190 189 192 192 192 195
+    188  80 136 131 124 184\r\n 181 185 185 189 189 189 190 189 192 193 188  95  86
+    \ 86  82 169\r\n 178 183 184 184 187 187 186 189 189 164 147 130 129 134 138 172\r\n
+    180 183 187 185 183 186 188 189 188 135  99  68  76  79  76 150\r\n 178 183 183
+    185 184 184 184 185 188 180 167 168 170 173 154 182\r\n 177 180 182 183 184 182
+    184 186 186 136  65  58  53  60  58 159\r\n 176 175 178 183 181 182 182 185 183
+    185 175 143  74 175 176 183\r\n 172 177 176 177 179 182 184 183 184 184 184 157
+    \ 70 184 185 183\r\n 170 175 173 177 178 181 184 183 181 142 100  90  37  74  79
+    162\r\n 164 170 171 175 177 178 182 180 174 150 113 110 108 108 116 164\r\n  95
+    101  89  88  89  86  96 102 105 105 105 105  97  90  99  94\r\n 102 105 103 100
+    101 107 107 110 113 112 114  53  18  21  27 114\r\n 102 103 103 103 109 110 109
+    109 109 110 102  18 100 109  58  59\r\n 104 106 101 106 109 110 110 108 109 112
+    \ 95  11 111 119  59  55\r\n 103 105 104 104 105 105 109 109 108 105 107  44  13
+    \ 21  19  98\r\n 104 101 105 105 108 110 105 112 109 107 106  68  91  82 102 114\r\n
+    100  99 102 105 104 103 102 109 108 108 108  19  80  69  63  97\r\n  99  96 102
+    101 100 101 105 105 107 107 104  29  24  23  22  90\r\n  98  97  98 100 100 102
+    107 105 106  91  78  71  72  70  77  95\r\n 102 100  99 104 101 103 104 104 104
+    \ 64  26   6  20  19  18  71\r\n  98  97  99 101 100 100  99 105 105 104  90  94
+    \ 99 105  88  98\r\n  97  96  99  97  97  99 103 104 104  60   9   6  10   8   3
+    \ 76\r\n 101 101 103  97  96  98 100 101  99  94  95  70  18  81  86  95\r\n  99
+    \ 99 102 101  99  98  97  99  98 101 103  91  23 105 107 100\r\n 100  98  99  98
+    \ 97  97  93 100  98  80  51  42   2  25  29  90\r\n 101 105 107  99 107 108 102
+    103  97  87  49  51  51  45  53  97\r\n\r\n 240 247 198 205 246 254 241 236 232
+    218 244 224 243 239 219 199\r\n 240 156 185 165 152 251 183 151 182 141 202 112
+    246 247 135 170\r\n 226 161 254 247 132 236 184 152 181 140 215 108 245 240 118
+    164\r\n 228 150 251 242 124 240 187 152 175 139 224 101 142 123  77 163\r\n 249
+    169 147 142 177 202 137 159 181 134 223 109 203 201 119 156\r\n 254 252 238 239
+    255 248 248 248 203 163 222 120 248 243 136 160\r\n 255 255 255 255 255 255 255
+    255 226 203 243 197 250 251 202 201\r\n 255 255 255 255 255 255 255 255 255 254
+    254 254 254 253 249 212\r\n 255 255 255 255 255 255 255 255 255 255 255 255 255
+    252 249 216\r\n 251 255 255 255 255 255 255 255 255 254 255 255 253 246 245 227\r\n
+    240 255 255 255 255 255 255 254 255 255 255 254 254 254 251 235\r\n 242 255 255
+    255 255 255 255 254 255 254 254 252 252 247 246 230\r\n 245 255 255 255 255 255
+    255 255 254 255 253 252 253 253 252 221\r\n 250 255 255 255 255 255 255 255 255
+    254 251 254 248 249 246 222\r\n 251 255 255 254 254 253 254 252 255 251 251 250
+    248 243 240 217\r\n 241 248 251 252 248 247 248 246 242 241 240 240 238 231 230
+    209\r\n 180 191 129 129 182 197 184 169 172 150 182 159 183 183 162 164\r\n 179
+    \ 84 124 117  81 191 124  82 138  76 154  58 176 185  79 116\r\n 163  89 196 193
+    \ 73 166 131  86 134  79 173  60 175 184  74 108\r\n 167  82 185 185  60 173 136
+    \ 86 129  76 170  53  74  70  37 108\r\n 192 119  79  75 116 143  80  95 130  68
+    168  58 143 157  90 110\r\n 192 199 185 183 196 187 188 188 147  99 167  65 175
+    184 100 113\r\n 193 199 197 197 200 198 195 193 164 135 180 136 185 184 142 150\r\n
+    194 198 199 198 197 196 192 192 189 188 188 186 183 184 181 174\r\n 193 196 197
+    196 194 194 192 189 189 189 185 186 185 183 183 180\r\n 189 197 194 194 194 194
+    192 190 186 188 184 184 182 184 184 182\r\n 176 195 194 195 193 192 189 189 187
+    186 184 182 182 182 181 178\r\n 175 192 191 192 191 191 190 189 187 183 184 184
+    181 179 178 177\r\n 178 194 190 190 190 187 187 189 184 185 185 183 183 177 177
+    175\r\n 181 191 192 189 188 188 187 185 184 187 183 182 178 176 173 171\r\n 178
+    190 189 189 188 186 184 185 183 183 183 180 175 177 175 170\r\n 175 183 184 183
+    182 181 181 181 178 180 178 177 176 172 170 164\r\n  94 114  59  55  98 114  97
+    \ 90  95  71  98  76  95 100  90  97\r\n  99  27  58  59  19 102  63  22  77  18
+    \ 88   3  86 107  29  53\r\n  90  21 109 119  21  82  69  23  70  19 105   8  81
+    105  25  45\r\n  97  18 100 111  13  91  80  24  72  20  99  10  18  23   2  51\r\n
+    105  53  18  11  44  68  19  29  71   6  94   6  70  91  42  51\r\n 105 114 102
+    \ 95 107 106 108 104  78  26  90   9  95 103  51  49\r\n 105 112 110 112 105 107
+    108 107  91  64 104  60  94 101  80  87\r\n 105 113 109 109 108 109 108 107 106
+    104 105 104  99  98  98  97\r\n 102 110 109 108 109 112 109 105 105 104 105 104
+    101  99 100 103\r\n  96 107 109 110 109 105 102 105 107 104  99 103 100  97  93
+    102\r\n  86 107 110 110 105 110 103 101 102 103 100  99  98  98  97 108\r\n  89
+    101 109 109 105 108 104 100 100 101 100  97  96  99  97 107\r\n  88 100 103 106
+    104 105 105 101 100 104 101  97  97 101  98  99\r\n  89 103 103 101 104 105 102
+    102  98  99  99  99 103 102  99 107\r\n 101 105 103 106 105 101  99  96  97 100
+    \ 97  96 101  99  98 105\r\n  95 102 102 104 103 104 100  99  98 102  98  97 101
+    \ 99 100 101\r\n\r\n 199 170 164 163 156 160 201 212 216 227 235 230 221 222 217
+    209\r\n 219 135 118  77 119 136 202 249 249 245 251 246 252 246 240 230\r\n 239
+    247 240 123 201 243 251 253 252 246 254 247 253 249 243 231\r\n 243 246 245 142
+    203 248 250 254 255 253 254 252 253 248 248 238\r\n 224 112 108 101 109 120 197
+    254 255 255 254 252 252 254 250 240\r\n 244 202 215 224 223 222 243 254 255 255
+    255 254 253 251 251 240\r\n 218 141 140 139 134 163 203 254 255 254 255 254 255
+    254 251 241\r\n 232 182 181 175 181 203 226 255 255 255 255 255 254 255 255 242\r\n
+    236 151 152 152 159 248 255 255 255 255 254 254 255 255 252 246\r\n 241 183 184
+    187 137 248 255 255 255 255 255 255 255 255 254 248\r\n 254 251 236 240 202 248
+    255 255 255 255 255 255 255 255 253 247\r\n 246 152 132 124 177 255 255 255 255
+    255 255 255 255 255 254 248\r\n 205 165 247 242 142 239 255 255 255 255 255 255
+    255 255 254 252\r\n 198 185 254 251 147 238 255 255 255 255 255 255 255 255 255
+    251\r\n 247 156 161 150 169 252 255 255 255 255 255 255 255 255 255 248\r\n 240
+    240 226 228 249 254 255 255 255 251 240 242 245 250 251 241\r\n 164 116 108 108
+    110 113 150 174 180 182 178 177 175 171 170 164\r\n 162  79  74  37  90 100 142
+    181 183 184 181 178 177 173 175 170\r\n 183 185 184  70 157 184 184 184 183 184
+    182 179 177 176 177 172\r\n 183 176 175  74 143 175 185 183 185 182 182 181 183
+    178 175 176\r\n 159  58  60  53  58  65 136 186 186 184 182 184 183 182 180 177\r\n
+    182 154 173 170 168 167 180 188 185 184 184 184 185 183 183 178\r\n 150  76  79
+    \ 76  68  99 135 188 189 188 186 183 185 187 183 180\r\n 172 138 134 129 130 147
+    164 189 189 186 187 187 184 184 183 178\r\n 169  82  86  86  95 188 193 192 189
+    190 189 189 189 185 185 181\r\n 184 124 131 136  80 188 195 192 192 192 189 190
+    187 187 184 181\r\n 197 191 166 173 143 187 198 196 194 194 192 191 187 188 186
+    181\r\n 182  81  73  60 116 196 200 197 194 194 193 191 190 188 188 182\r\n 129
+    117 193 185  75 183 197 198 196 194 195 192 190 189 189 183\r\n 129 124 196 185
+    \ 79 185 197 199 197 194 194 191 190 192 189 184\r\n 191  84  89  82 119 199 199
+    198 196 197 195 192 194 191 190 183\r\n 180 179 163 167 192 192 193 194 193 189
+    176 175 178 181 178 175\r\n  97  53  45  51  51  49  87  97 103 102 108 107  99
+    107 105 101\r\n  90  29  25   2  42  51  80  98 100  93  97  97  98  99  98 100\r\n
+    100 107 105  23  91 103 101  98  99  97  98  99 101 102  99  99\r\n  95  86  81
+    \ 18  70  95  94  99 101 100  98  96  97 103 101 101\r\n  76   3   8  10   6   9
+    \ 60 104 104 103  99  97  97  99  96  97\r\n  98  88 105  99  94  90 104 105 105
+    \ 99 100 100 101  99  97  98\r\n  71  18  19  20   6  26  64 104 104 104 103 101
+    104  99 100 102\r\n  95  77  70  72  71  78  91 106 105 107 102 100 100  98  97
+    \ 98\r\n  90  22  23  24  29 104 107 107 105 105 101 100 101 102  96  99\r\n  97
+    \ 63  69  80  19 108 108 108 109 102 103 104 105 102  99 100\r\n 114 102  82  91
+    \ 68 106 107 109 112 105 110 108 105 105 101 104\r\n  98  19  21  13  44 107 105
+    108 109 109 105 105 104 104 105 103\r\n  55  59 119 111  11  95 112 109 108 110
+    110 109 106 101 106 104\r\n  59  58 109 100  18 102 110 109 109 109 110 109 103
+    103 103 102\r\n 114  27  21  18  53 114 112 113 110 107 107 101 100 103 105 102\r\n
+    \ 94  99  90  97 105 105 105 105 102  96  86  89  88  89 101  95\r\n\r\n"
+  PatternWidth: .0799999982
+  BarcodeID: 0
+  MultiConfigFile: 
+  NFTDataName: 
+  currentUseContPoseEstimation: 0
+  currentFiltered: 0
+  currentFilterSampleRate: 30
+  currentFilterCutoffFreq: 15
+  currentNFTScale: 1
+--- !u!114 &2086648234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2086648230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed68815202b64d4c956d71c0f176088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MarkerType: 0
+  Tag: field
   PatternFilenameIndex: 2
-  PatternFilename: phone.hiro
-  PatternContents: " 255 253 253 252 253 252 252 253 253 252 253 253 253 254 252 253\r\n
-    255 252 254 254 254 254 254 254 254 254 254 254 254 254 253 252\r\n 255 254 254
-    254 254 254 254 254 254 254 254 254 254 254 253 251\r\n 255 254 254 254 254 254
-    254 254 254 254 254 254 254 254 254 251\r\n 255 254 254 254 254 254 254 254 254
-    254 254 254 254 254 254 251\r\n 255 254 254 254 254 254 254 254 254 254 254 254
-    254 254 254 254\r\n 254 252 254 254 254 254 254 254 254 254 254 254 254 254 254
-    254\r\n 253 252 254 254 254 254 254 254 254 254 254 254 254 254 254 254\r\n 253
-    252 254 253 254 253 253 254 254 254 254 254 254 254 254 254\r\n 250 252 252 253
-    248 254 245 254 253 253 254 254 254 254 254 254\r\n 229 244 254 254 214 255 237
-    254 253 254 254 254 254 254 253 254\r\n 235 237 255 253 222 255 226 251 246 240
-    251 253 233 243 240 255\r\n 232 237 247 235 222 255 226 243 232 232 255 228 241
-    255 231 237\r\n 226 238 255 246 217 255 211 247 225 243 255 227 243 255 240 232\r\n
-    227 240 255 249 212 255 213 249 227 241 255 238 230 254 233 246\r\n 251 253 254
-    255 243 255 235 252 243 249 255 255 237 238 246 255\r\n 255 254 254 254 254 254
-    254 254 254 254 254 254 254 254 255 255\r\n 255 254 254 254 254 254 254 254 254
-    254 254 254 254 254 254 255\r\n 255 254 254 254 254 254 254 254 254 254 254 254
-    254 254 254 255\r\n 255 254 254 254 254 254 254 254 254 254 254 254 254 254 254
-    255\r\n 255 254 254 254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 255
-    254 254 254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 255 254 254 254
-    254 254 254 254 254 254 254 254 254 254 254 254\r\n 255 254 254 254 254 254 254
-    254 254 254 254 254 254 254 254 254\r\n 255 254 254 254 254 254 254 254 254 254
-    254 254 254 254 254 254\r\n 245 250 254 254 242 255 238 251 254 254 254 254 254
-    254 254 254\r\n 205 234 255 254 177 249 230 249 255 254 254 254 254 254 254 254\r\n
-    202 207 253 243 174 250 195 241 227 204 238 249 194 195 209 255\r\n 187 169 202
-    183 162 254 183 226 197 194 252 205 215 255 211 219\r\n 196 213 255 238 175 255
-    167 234 200 223 255 199 231 255 229 213\r\n 206 224 255 245 174 255 182 238 209
-    227 255 227 200 239 200 233\r\n 248 251 255 255 238 255 225 250 240 247 255 255
-    220 206 234 255\r\n 232 248 249 249 249 249 250 249 249 249 249 249 249 248 248
-    242\r\n 233 249 254 254 254 254 254 254 254 254 254 254 254 254 253 242\r\n 233
-    252 254 254 254 254 254 254 254 254 254 254 254 254 253 243\r\n 235 252 254 254
-    254 254 254 254 254 254 254 254 254 254 254 245\r\n 235 252 254 254 254 254 254
-    254 254 254 254 254 254 254 254 246\r\n 230 251 254 254 254 254 254 254 254 254
-    254 254 254 254 254 243\r\n 233 251 254 254 254 254 254 254 254 254 254 254 254
-    254 254 246\r\n 237 252 254 254 254 254 254 254 254 254 254 254 254 254 254 247\r\n
-    239 252 254 252 251 252 253 254 254 254 254 254 254 254 254 247\r\n 195 207 242
-    241 201 224 201 220 246 253 254 254 254 254 254 247\r\n 130 178 234 232 111 202
-    176 207 229 233 242 248 239 232 235 244\r\n 120 123 189 178  89 193 117 181 161
-    120 162 203 125 122 142 216\r\n 113  95 139 107  73 195 105 160 127 127 219 150
-    158 229 167 159\r\n 134 154 234 205  98 200  85 164 136 172 230 142 180 237 189
-    149\r\n 147 168 236 216 106 209 110 177 151 175 235 188 131 171 124 174\r\n 210
-    222 239 239 212 231 186 217 206 221 241 242 183 150 184 229\r\n\r\n 253 252 251
-    251 251 254 254 254 254 254 254 255 237 232 246 255\r\n 252 253 253 254 254 254
-    254 254 254 254 253 240 231 240 233 246\r\n 254 254 254 254 254 254 254 254 254
-    254 254 243 255 255 254 238\r\n 253 254 254 254 254 254 254 254 254 254 254 233
-    241 243 230 237\r\n 253 254 254 254 254 254 254 254 254 254 254 253 228 227 238
-    255\r\n 253 254 254 254 254 254 254 254 254 254 254 251 255 255 255 255\r\n 252
-    254 254 254 254 254 254 254 254 253 254 240 232 243 241 249\r\n 253 254 254 254
-    254 254 254 254 254 253 253 246 232 225 227 243\r\n 253 254 254 254 254 254 254
-    254 254 254 254 251 243 247 249 252\r\n 252 254 254 254 254 254 254 254 253 245
-    237 226 226 211 213 235\r\n 252 254 254 254 254 254 254 254 253 254 255 255 255
-    255 255 255\r\n 253 254 254 254 254 254 254 254 254 248 214 222 222 217 212 243\r\n
-    252 254 254 254 254 254 254 254 253 253 254 253 235 246 249 255\r\n 253 254 254
-    254 254 254 254 254 254 252 254 255 247 255 255 254\r\n 253 252 254 254 254 254
-    252 252 252 252 244 237 237 238 240 253\r\n 255 255 255 255 255 255 254 253 253
-    250 229 235 232 226 227 251\r\n 255 255 255 255 255 255 254 254 254 254 254 255
-    219 213 233 255\r\n 255 254 254 254 254 254 254 254 254 254 254 209 211 229 200
-    234\r\n 254 254 254 254 254 254 254 254 254 254 254 195 255 255 239 206\r\n 254
-    254 254 254 254 254 254 254 254 254 254 194 215 231 200 220\r\n 254 254 254 254
-    254 254 254 254 254 254 254 249 205 199 227 255\r\n 254 254 254 254 254 254 254
-    254 254 254 254 238 252 255 255 255\r\n 254 254 254 254 254 254 254 254 254 254
-    254 204 194 223 227 247\r\n 254 254 254 254 254 254 254 254 254 254 255 227 197
-    200 209 240\r\n 254 254 254 254 254 254 254 254 254 251 249 241 226 234 238 250\r\n
-    254 254 254 254 254 254 254 254 254 238 230 195 183 167 182 225\r\n 254 254 254
-    254 254 254 254 254 254 255 249 250 254 255 255 255\r\n 254 254 254 254 254 254
-    254 254 254 242 177 174 162 175 174 238\r\n 254 254 254 254 254 254 254 254 254
-    254 254 243 183 238 245 255\r\n 254 254 254 254 254 254 254 254 254 254 255 253
-    202 255 255 255\r\n 254 254 254 254 254 254 254 254 254 250 234 207 169 213 224
-    251\r\n 255 255 255 255 255 255 255 255 255 245 205 202 187 196 206 248\r\n 242
-    242 243 245 246 243 246 247 247 247 244 216 159 149 174 229\r\n 248 253 253 254
-    254 254 254 254 254 254 235 142 167 189 124 184\r\n 248 254 254 254 254 254 254
-    254 254 254 232 122 229 237 171 150\r\n 249 254 254 254 254 254 254 254 254 254
-    239 125 158 180 131 183\r\n 249 254 254 254 254 254 254 254 254 254 248 203 150
-    142 188 242\r\n 249 254 254 254 254 254 254 254 254 254 242 162 219 230 235 241\r\n
-    249 254 254 254 254 254 254 254 254 253 233 120 127 172 175 221\r\n 249 254 254
-    254 254 254 254 254 254 246 229 161 127 136 151 206\r\n 249 254 254 254 254 254
-    254 254 254 220 207 181 160 164 177 217\r\n 250 254 254 254 254 254 254 254 253
-    201 176 117 105  85 110 186\r\n 249 254 254 254 254 254 254 254 252 224 202 193
-    195 200 209 231\r\n 249 254 254 254 254 254 254 254 251 201 111  89  73  98 106
-    212\r\n 249 254 254 254 254 254 254 254 252 241 232 178 107 205 216 239\r\n 249
-    254 254 254 254 254 254 254 254 242 234 189 139 234 236 239\r\n 248 249 252 252
-    252 251 251 252 252 207 178 123  95 154 168 222\r\n 232 233 233 235 235 230 233
-    237 239 195 130 120 113 134 147 210\r\n\r\n 255 246 238 237 255 255 249 243 252
-    235 255 243 255 254 253 251\r\n 246 233 254 230 238 255 241 227 249 213 255 212
-    249 255 240 227\r\n 232 240 255 243 227 255 243 225 247 211 255 217 246 255 238
-    226\r\n 237 231 255 241 228 255 232 232 243 226 255 222 235 247 237 232\r\n 255
-    240 243 233 253 251 240 246 251 226 255 222 253 255 237 235\r\n 254 253 254 254
-    254 254 254 253 254 237 255 214 254 254 244 229\r\n 254 254 254 254 254 254 253
-    253 254 245 254 248 253 252 252 250\r\n 254 254 254 254 254 254 254 254 254 253
-    253 254 253 254 252 253\r\n 254 254 254 254 254 254 254 254 254 254 254 254 254
-    254 252 253\r\n 254 254 254 254 254 254 254 254 254 254 254 254 254 254 252 254\r\n
-    254 254 254 254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 251 254 254
-    254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 251 254 254 254 254 254
-    254 254 254 254 254 254 254 254 254 255\r\n 251 253 254 254 254 254 254 254 254
-    254 254 254 254 254 254 255\r\n 252 253 254 254 254 254 254 254 254 254 254 254
-    254 254 252 255\r\n 253 252 254 253 253 253 252 253 253 252 252 253 252 253 253
-    255\r\n 255 234 206 220 255 255 247 240 250 225 255 238 255 255 251 248\r\n 233
-    200 239 200 227 255 227 209 238 182 255 174 245 255 224 206\r\n 213 229 255 231
-    199 255 223 200 234 167 255 175 238 255 213 196\r\n 219 211 255 215 205 252 194
-    197 226 183 254 162 183 202 169 187\r\n 255 209 195 194 249 238 204 227 241 195
-    250 174 243 253 207 202\r\n 254 254 254 254 254 254 254 255 249 230 249 177 254
-    255 234 205\r\n 254 254 254 254 254 254 254 254 251 238 255 242 254 254 250 245\r\n
-    254 254 254 254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 254 254 254
-    254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 254 254 254 254 254 254
-    254 254 254 254 254 254 254 254 254 255\r\n 255 254 254 254 254 254 254 254 254
-    254 254 254 254 254 254 255\r\n 255 254 254 254 254 254 254 254 254 254 254 254
-    254 254 254 255\r\n 255 254 254 254 254 254 254 254 254 254 254 254 254 254 254
-    255\r\n 255 254 254 254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 255
-    254 254 254 254 254 254 254 254 254 254 254 254 254 254 255\r\n 255 255 254 254
-    254 254 254 254 254 254 254 254 254 254 254 255\r\n 229 184 150 183 242 241 221
-    206 217 186 231 212 239 239 222 210\r\n 174 124 171 131 188 235 175 151 177 110
-    209 106 216 236 168 147\r\n 149 189 237 180 142 230 172 136 164  85 200  98 205
-    234 154 134\r\n 159 167 229 158 150 219 127 127 160 105 195  73 107 139  95 113\r\n
-    216 142 122 125 203 162 120 161 181 117 193  89 178 189 123 120\r\n 244 235 232
-    239 248 242 233 229 207 176 202 111 232 234 178 130\r\n 247 254 254 254 254 254
-    253 246 220 201 224 201 241 242 207 195\r\n 247 254 254 254 254 254 254 254 254
-    253 252 251 252 254 252 239\r\n 247 254 254 254 254 254 254 254 254 254 254 254
-    254 254 252 237\r\n 246 254 254 254 254 254 254 254 254 254 254 254 254 254 251
-    233\r\n 243 254 254 254 254 254 254 254 254 254 254 254 254 254 251 230\r\n 246
-    254 254 254 254 254 254 254 254 254 254 254 254 254 252 235\r\n 245 254 254 254
-    254 254 254 254 254 254 254 254 254 254 252 235\r\n 243 253 254 254 254 254 254
-    254 254 254 254 254 254 254 252 233\r\n 242 253 254 254 254 254 254 254 254 254
-    254 254 254 254 249 233\r\n 242 248 248 249 249 249 249 249 249 250 249 249 249
-    249 248 232\r\n\r\n 251 227 226 232 235 229 250 253 253 254 255 255 255 255 255
-    255\r\n 253 240 238 237 237 244 252 252 252 252 254 254 254 254 252 253\r\n 254
-    255 255 247 255 254 252 254 254 254 254 254 254 254 254 253\r\n 255 249 246 235
-    253 254 253 253 254 254 254 254 254 254 254 252\r\n 243 212 217 222 222 214 248
-    254 254 254 254 254 254 254 254 253\r\n 255 255 255 255 255 255 254 253 254 254
-    254 254 254 254 254 252\r\n 235 213 211 226 226 237 245 253 254 254 254 254 254
-    254 254 252\r\n 252 249 247 243 251 254 254 254 254 254 254 254 254 254 254 253\r\n
-    243 227 225 232 246 253 253 254 254 254 254 254 254 254 254 253\r\n 249 241 243
-    232 240 254 253 254 254 254 254 254 254 254 254 252\r\n 255 255 255 255 251 254
-    254 254 254 254 254 254 254 254 254 253\r\n 255 238 227 228 253 254 254 254 254
-    254 254 254 254 254 254 253\r\n 237 230 243 241 233 254 254 254 254 254 254 254
-    254 254 254 253\r\n 238 254 255 255 243 254 254 254 254 254 254 254 254 254 254
-    254\r\n 246 233 240 231 240 253 254 254 254 254 254 254 254 253 253 252\r\n 255
-    246 232 237 255 254 254 254 254 254 254 251 251 251 252 253\r\n 248 206 196 187
-    202 205 245 255 255 255 255 255 255 255 255 255\r\n 251 224 213 169 207 234 250
-    254 254 254 254 254 254 254 254 254\r\n 255 255 255 202 253 255 254 254 254 254
-    254 254 254 254 254 254\r\n 255 245 238 183 243 254 254 254 254 254 254 254 254
-    254 254 254\r\n 238 174 175 162 174 177 242 254 254 254 254 254 254 254 254 254\r\n
-    255 255 255 254 250 249 255 254 254 254 254 254 254 254 254 254\r\n 225 182 167
-    183 195 230 238 254 254 254 254 254 254 254 254 254\r\n 250 238 234 226 241 249
-    251 254 254 254 254 254 254 254 254 254\r\n 240 209 200 197 227 255 254 254 254
-    254 254 254 254 254 254 254\r\n 247 227 223 194 204 254 254 254 254 254 254 254
-    254 254 254 254\r\n 255 255 255 252 238 254 254 254 254 254 254 254 254 254 254
-    254\r\n 255 227 199 205 249 254 254 254 254 254 254 254 254 254 254 254\r\n 220
-    200 231 215 194 254 254 254 254 254 254 254 254 254 254 254\r\n 206 239 255 255
-    195 254 254 254 254 254 254 254 254 254 254 254\r\n 234 200 229 211 209 254 254
-    254 254 254 254 254 254 254 254 255\r\n 255 233 213 219 255 254 254 254 254 254
-    255 255 255 255 255 255\r\n 210 147 134 113 120 130 195 239 237 233 230 235 235
-    233 233 232\r\n 222 168 154  95 123 178 207 252 252 251 251 252 252 252 249 248\r\n
-    239 236 234 139 189 234 242 254 254 254 254 254 254 254 254 249\r\n 239 216 205
-    107 178 232 241 252 254 254 254 254 254 254 254 249\r\n 212 106  98  73  89 111
-    201 251 254 254 254 254 254 254 254 249\r\n 231 209 200 195 193 202 224 252 254
-    254 254 254 254 254 254 249\r\n 186 110  85 105 117 176 201 253 254 254 254 254
-    254 254 254 250\r\n 217 177 164 160 181 207 220 254 254 254 254 254 254 254 254
-    249\r\n 206 151 136 127 161 229 246 254 254 254 254 254 254 254 254 249\r\n 221
-    175 172 127 120 233 253 254 254 254 254 254 254 254 254 249\r\n 241 235 230 219
-    162 242 254 254 254 254 254 254 254 254 254 249\r\n 242 188 142 150 203 248 254
-    254 254 254 254 254 254 254 254 249\r\n 183 131 180 158 125 239 254 254 254 254
-    254 254 254 254 254 249\r\n 150 171 237 229 122 232 254 254 254 254 254 254 254
-    254 254 248\r\n 184 124 189 167 142 235 254 254 254 254 254 254 254 253 253 248\r\n
-    229 174 149 159 216 244 247 247 247 246 243 246 245 243 242 242\r\n\r\n"
-  PatternWidth: 0.08
+  PatternFilename: patt.myField
+  PatternContents: " 217 222 209 196 176 171 175 194 207 217 219 217 215 221 226 219\r\n
+    232 224 121 113 103 102 105 112 116 123 132 137 145 157 230 231\r\n 239 217 114
+    \ 96  83  87  88  91  99 103 103 102 104 122 220 230\r\n 237 209 106  87  86  85
+    \ 85  89  96 102  99  96  90 106 217 228\r\n 234 206 111  96  94  91  92  98 103
+    106 102  99  89 112 206 231\r\n 232 203 110 100 101 102 115 128 141 152 141 134
+    145 158 235 240\r\n 235 217 122 105 102 146 226 238 234 232 232 229 232 234 246
+    237\r\n 237 217 117  92  91 111 209 216 222 236 249 248 250 250 249 245\r\n 233
+    218 122  96  93  97 113 120 119 140 234 250 252 254 252 243\r\n 239 225 126  99
+    \ 93  94  98 107 114 130 242 253 254 252 251 242\r\n 239 224 129  97  91  96 119
+    127 156 169 245 248 248 247 250 245\r\n 234 237 138  94  89 116 225 241 242 245
+    246 228 180 180 230 243\r\n 241 239 134  98  99 142 249 251 252 253 249 172 132
+    131 204 239\r\n 243 245 147 107 105 154 251 255 255 254 253 186 136 149 230 248\r\n
+    242 244 173 126 129 162 254 255 255 254 252 243 232 242 252 249\r\n 232 239 229
+    198 200 234 242 242 243 243 245 238 236 237 237 229\r\n 176 177 157 144 130 128
+    129 141 158 173 171 161 163 173 178 175\r\n 178 168  56  52  53  54  53  58  58
+    \ 62  68  68  77  91 168 181\r\n 178 155  54  47  41  46  49  50  52  51  48  47
+    \ 46  61 160 179\r\n 180 148  53  43  42  44  48  51  50  47  45  47  48  61 167
+    180\r\n 176 145  52  44  44  47  49  52  52  51  47  48  48  65 156 181\r\n 178
+    148  55  44  44  43  52  59  68  81  71  68  79  91 169 180\r\n 174 156  62  49
+    \ 50  95 173 176 175 171 167 162 166 170 183 181\r\n 176 157  59  43  46  63 159
+    164 169 174 185 185 185 185 184 182\r\n 175 162  65  46  46  46  55  58  58  77
+    171 185 183 183 184 180\r\n 175 165  70  47  41  43  44  48  52  65 177 186 184
+    184 185 180\r\n 179 168  72  45  44  45  62  62  83  95 175 182 182 183 185 181\r\n
+    179 178  76  43  46  62 166 181 179 180 183 169 118 114 165 181\r\n 179 178  74
+    \ 45  47  83 184 186 186 187 185 105  63  67 139 176\r\n 180 182  83  47  51  93
+    185 186 185 187 186 117  62  76 158 179\r\n 181 183 107  55  62  93 185 187 187
+    187 188 183 165 170 184 183\r\n 177 182 173 145 150 182 184 182 181 182 186 182
+    182 184 185 178\r\n 117 114 103  91  75  76  79  86  97 109 110 104 104 108 110
+    109\r\n 122 105   4   8   9  10  10  13   8   8  14  19  22  30 106 119\r\n 118
+    \ 90   0   4   5  12  11   6   8   8   8  14  12  13 101 116\r\n 119  83   0   6
+    \ 14  14  10   9   8  10   8  12  11  11 102 113\r\n 115  84   2   8  12   9   6
+    \ 11  12  14   9  11   5   8  92 119\r\n 115  85   4   6   6   4   3   1  12  29
+    \ 21  16  18  29 105 117\r\n 110  90   5   3   5  43 113 115 111 108 106 103 102
+    105 117 116\r\n 112  94  10   7   6  16 102  99  99 107 120 118 120 120 119 118\r\n
+    114  97  13   4   4   4  10   8   6  18 104 118 120 121 118 113\r\n 117 100  16
+    \  6   9   7   5   9  11  15 116 119 116 118 117 112\r\n 119 103  19   4   7   2
+    \  5   3  26  33 111 117 118 121 120 116\r\n 118 113  22   2   8  16 108 111 107
+    110 115 100  52  52 102 116\r\n 120 116  23   3  11  29 122 113 108 114 117  44
+    \  7   8  76 114\r\n 117 116  28   2   0  32 120 121 119 117 117  53   4  16  95
+    117\r\n 112 108  44   3   2  26 118 117 114 114 114 108 100 109 119 118\r\n 117
+    112 103  80  84 117 119 114 113 116 118 115 117 118 118 115\r\n\r\n 219 231 230
+    228 231 240 237 245 243 242 245 243 239 248 249 229\r\n 226 230 220 217 206 235
+    246 249 252 251 250 230 204 230 252 237\r\n 221 157 122 106 112 158 234 250 254
+    252 247 180 131 149 242 237\r\n 215 145 104  90  89 145 232 250 252 254 248 180
+    132 136 232 236\r\n 217 137 102  96  99 134 229 248 250 253 248 228 172 186 243
+    238\r\n 219 132 103  99 102 141 232 249 234 242 245 246 249 253 252 245\r\n 217
+    123 103 102 106 152 232 236 140 130 169 245 253 254 254 243\r\n 207 116  99  96
+    103 141 234 222 119 114 156 242 252 255 255 243\r\n 194 112  91  89  98 128 238
+    216 120 107 127 241 251 255 255 242\r\n 175 105  88  85  92 115 226 209 113  98
+    119 225 249 251 254 242\r\n 171 102  87  85  91 102 146 111  97  94  96 116 142
+    154 162 234\r\n 176 103  83  86  94 101 102  91  93  93  91  89  99 105 129 200\r\n
+    196 113  96  87  96 100 105  92  96  99  97  94  98 107 126 198\r\n 209 121 114
+    106 111 110 122 117 122 126 129 138 134 147 173 229\r\n 222 224 217 209 206 203
+    217 217 218 225 224 237 239 245 244 239\r\n 217 232 239 237 234 232 235 237 233
+    239 239 234 241 243 242 232\r\n 175 181 179 180 181 180 181 182 180 180 181 181
+    176 179 183 178\r\n 178 168 160 167 156 169 183 184 184 185 185 165 139 158 184
+    185\r\n 173  91  61  61  65  91 170 185 183 184 183 114  67  76 170 184\r\n 163
+    \ 77  46  48  48  79 166 185 183 184 182 118  63  62 165 182\r\n 161  68  47  47
+    \ 48  68 162 185 185 186 182 169 105 117 183 182\r\n 171  68  48  45  47  71 167
+    185 171 177 175 183 185 186 188 186\r\n 173  62  51  47  51  81 171 174  77  65
+    \ 95 180 187 187 187 182\r\n 158  58  52  50  52  68 175 169  58  52  83 179 186
+    185 187 181\r\n 141  58  50  51  52  59 176 164  58  48  62 181 186 186 187 182\r\n
+    129  53  49  48  49  52 173 159  55  44  62 166 184 185 185 184\r\n 128  54  46
+    \ 44  47  43  95  63  46  43  45  62  83  93  93 182\r\n 130  53  41  42  44  44
+    \ 50  46  46  41  44  46  47  51  62 150\r\n 144  52  47  43  44  44  49  43  46
+    \ 47  45  43  45  47  55 145\r\n 157  56  54  53  52  55  62  59  65  70  72  76
+    \ 74  83 107 173\r\n 177 168 155 148 145 148 156 157 162 165 168 178 178 182 183
+    182\r\n 176 178 178 180 176 178 174 176 175 175 179 179 179 180 181 177\r\n 109
+    119 116 113 119 117 116 118 113 112 116 116 114 117 118 115\r\n 110 106 101 102
+    \ 92 105 117 119 118 117 120 102  76  95 119 118\r\n 108  30  13  11   8  29 105
+    120 121 118 121  52   8  16 109 118\r\n 104  22  12  11   5  18 102 120 120 116
+    118  52   7   4 100 117\r\n 104  19  14  12  11  16 103 118 118 119 117 100  44
+    \ 53 108 115\r\n 110  14   8   8   9  21 106 120 104 116 111 115 117 117 114 118\r\n
+    109   8   8  10  14  29 108 107  18  15  33 110 114 117 114 116\r\n  97   8   8
+    \  8  12  12 111  99   6  11  26 107 108 119 114 113\r\n  86  13   6   9  11   1
+    115  99   8   9   3 111 113 121 117 114\r\n  79  10  11  10   6   3 113 102  10
+    \  5   5 108 122 120 118 119\r\n  76  10  12  14   9   4  43  16   4   7   2  16
+    \ 29  32  26 117\r\n  75   9   5  14  12   6   5   6   4   9   7   8  11   0   2
+    \ 84\r\n  91   8   4   6   8   6   3   7   4   6   4   2   3   2   3  80\r\n 103
+    \  4   0   0   2   4   5  10  13  16  19  22  23  28  44 103\r\n 114 105  90  83
+    \ 84  85  90  94  97 100 103 113 116 116 108 112\r\n 117 122 118 119 115 115 110
+    112 114 117 119 118 120 117 112 117\r\n\r\n 229 237 237 236 238 245 243 243 242
+    242 234 200 198 229 239 232\r\n 249 252 242 232 243 252 254 255 255 254 162 129
+    126 173 244 242\r\n 248 230 149 136 186 253 254 255 255 251 154 105 107 147 245
+    243\r\n 239 204 131 132 172 249 253 252 251 249 142  99  98 134 239 241\r\n 243
+    230 180 180 228 246 245 242 241 225 116  89  94 138 237 234\r\n 245 250 247 248
+    248 245 169 156 127 119  96  91  97 129 224 239\r\n 242 251 252 254 253 242 130
+    114 107  98  94  93  99 126 225 239\r\n 243 252 254 252 250 234 140 119 120 113
+    \ 97  93  96 122 218 233\r\n 245 249 250 250 248 249 236 222 216 209 111  91  92
+    117 217 237\r\n 237 246 234 232 229 232 232 234 238 226 146 102 105 122 217 235\r\n
+    240 235 158 145 134 141 152 141 128 115 102 101 100 110 203 232\r\n 231 206 112
+    \ 89  99 102 106 103  98  92  91  94  96 111 206 234\r\n 228 217 106  90  96  99
+    102  96  89  85  85  86  87 106 209 237\r\n 230 220 122 104 102 103 103  99  91
+    \ 88  87  83  96 114 217 239\r\n 231 230 157 145 137 132 123 116 112 105 102 103
+    113 121 224 232\r\n 219 226 221 215 217 219 217 207 194 175 171 176 196 209 222
+    217\r\n 178 185 184 182 182 186 182 181 182 184 182 150 145 173 182 177\r\n 183
+    184 170 165 183 188 187 187 187 185  93  62  55 107 183 181\r\n 179 158  76  62
+    117 186 187 185 186 185  93  51  47  83 182 180\r\n 176 139  67  63 105 185 187
+    186 186 184  83  47  45  74 178 179\r\n 181 165 114 118 169 183 180 179 181 166
+    \ 62  46  43  76 178 179\r\n 181 185 183 182 182 175  95  83  62  62  45  44  45
+    \ 72 168 179\r\n 180 185 184 184 186 177  65  52  48  44  43  41  47  70 165 175\r\n
+    180 184 183 183 185 171  77  58  58  55  46  46  46  65 162 175\r\n 182 184 185
+    185 185 185 174 169 164 159  63  46  43  59 157 176\r\n 181 183 170 166 162 167
+    171 175 176 173  95  50  49  62 156 174\r\n 180 169  91  79  68  71  81  68  59
+    \ 52  43  44  44  55 148 178\r\n 181 156  65  48  48  47  51  52  52  49  47  44
+    \ 44  52 145 176\r\n 180 167  61  48  47  45  47  50  51  48  44  42  43  53 148
+    180\r\n 179 160  61  46  47  48  51  52  50  49  46  41  47  54 155 178\r\n 181
+    168  91  77  68  68  62  58  58  53  54  53  52  56 168 178\r\n 175 178 173 163
+    161 171 173 158 141 129 128 130 144 157 177 176\r\n 115 118 118 117 115 118 116
+    113 114 119 117  84  80 103 112 117\r\n 118 119 109 100 108 114 114 114 117 118
+    \ 26   2   3  44 108 112\r\n 117  95  16   4  53 117 117 119 121 120  32   0   2
+    \ 28 116 117\r\n 114  76   8   7  44 117 114 108 113 122  29  11   3  23 116 120\r\n
+    116 102  52  52 100 115 110 107 111 108  16   8   2  22 113 118\r\n 116 120 121
+    118 117 111  33  26   3   5   2   7   4  19 103 119\r\n 112 117 118 116 119 116
+    \ 15  11   9   5   7   9   6  16 100 117\r\n 113 118 121 120 118 104  18   6   8
+    \ 10   4   4   4  13  97 114\r\n 118 119 120 120 118 120 107  99  99 102  16   6
+    \  7  10  94 112\r\n 116 117 105 102 103 106 108 111 115 113  43   5   3   5  90
+    110\r\n 117 105  29  18  16  21  29  12   1   3   4   6   6   4  85 115\r\n 119
+    \ 92   8   5  11   9  14  12  11   6   9  12   8   2  84 115\r\n 113 102  11  11
+    \ 12   8  10   8   9  10  14  14   6   0  83 119\r\n 116 101  13  12  14   8   8
+    \  8   6  11  12   5   4   0  90 118\r\n 119 106  30  22  19  14   8   8  13  10
+    \ 10   9   8   4 105 122\r\n 109 110 108 104 104 110 109  97  86  79  76  75  91
+    103 114 117\r\n\r\n 232 242 243 241 234 239 239 233 237 235 232 234 237 239 232
+    217\r\n 239 244 245 239 237 224 225 218 217 217 203 206 209 217 224 222\r\n 229
+    173 147 134 138 129 126 122 117 122 110 111 106 114 121 209\r\n 198 126 107  98
+    \ 94  97  99  96  92 105 100  96  87  96 113 196\r\n 200 129 105  99  89  91  93
+    \ 93  91 102 101  94  86  83 103 176\r\n 234 162 154 142 116  96  94  97 111 146
+    102  91  85  87 102 171\r\n 242 254 251 249 225 119  98 113 209 226 115  92  85
+    \ 88 105 175\r\n 242 255 255 251 241 127 107 120 216 238 128  98  89  91 112 194\r\n
+    243 255 255 252 242 156 114 119 222 234 141 103  96  99 116 207\r\n 243 254 254
+    253 245 169 130 140 236 232 152 106 102 103 123 217\r\n 245 252 253 249 246 245
+    242 234 249 232 141 102  99 103 132 219\r\n 238 243 186 172 228 248 253 250 248
+    229 134  99  96 102 137 217\r\n 236 232 136 132 180 248 254 252 250 232 145  89
+    \ 90 104 145 215\r\n 237 242 149 131 180 247 252 254 250 234 158 112 106 122 157
+    221\r\n 237 252 230 204 230 250 251 252 249 246 235 206 217 220 230 226\r\n 229
+    249 248 239 243 245 242 243 245 237 240 231 228 230 231 219\r\n 177 181 180 179
+    179 179 175 175 176 174 178 176 180 178 178 176\r\n 182 183 182 178 178 168 165
+    162 157 156 148 145 148 155 168 177\r\n 173 107  83  74  76  72  70  65  59  62
+    \ 55  52  53  54  56 157\r\n 145  55  47  45  43  45  47  46  43  49  44  44  43
+    \ 47  52 144\r\n 150  62  51  47  46  44  41  46  46  50  44  44  42  41  53 130\r\n
+    182  93  93  83  62  45  43  46  63  95  43  47  44  46  54 128\r\n 184 185 185
+    184 166  62  44  55 159 173  52  49  48  49  53 129\r\n 182 187 186 186 181  62
+    \ 48  58 164 176  59  52  51  50  58 141\r\n 181 187 185 186 179  83  52  58 169
+    175  68  52  50  52  58 158\r\n 182 187 187 187 180  95  65  77 174 171  81  51
+    \ 47  51  62 173\r\n 186 188 186 185 183 175 177 171 185 167  71  47  45  48  68
+    171\r\n 182 183 117 105 169 182 186 185 185 162  68  48  47  47  68 161\r\n 182
+    165  62  63 118 182 184 183 185 166  79  48  48  46  77 163\r\n 184 170  76  67
+    114 183 184 183 185 170  91  65  61  61  91 173\r\n 185 184 158 139 165 185 185
+    184 184 183 169 156 167 160 168 178\r\n 178 183 179 176 181 181 180 180 182 181
+    180 181 180 179 181 175\r\n 117 112 117 120 118 119 117 114 112 110 115 115 119
+    118 122 117\r\n 112 108 116 116 113 103 100  97  94  90  85  84  83  90 105 114\r\n
+    103  44  28  23  22  19  16  13  10   5   4   2   0   0   4 103\r\n  80   3   2
+    \  3   2   4   6   4   7   3   6   8   6   4   8  91\r\n  84   2   0  11   8   7
+    \  9   4   6   5   6  12  14   5   9  75\r\n 117  26  32  29  16   2   7   4  16
+    \ 43   4   9  14  12  10  76\r\n 119 118 120 122 108   5   5  10 102 113   3   6
+    \ 10  11  10  79\r\n 114 117 121 113 111   3   9   8  99 115   1  11   9   6  13
+    \ 86\r\n 113 114 119 108 107  26  11   6  99 111  12  12   8   8   8  97\r\n 116
+    114 117 114 110  33  15  18 107 108  29  14  10   8   8 109\r\n 118 114 117 117
+    115 111 116 104 120 106  21   9   8   8  14 110\r\n 115 108  53  44 100 117 119
+    118 118 103  16  11  12  14  19 104\r\n 117 100   4   7  52 118 116 120 120 102
+    \ 18   5  11  12  22 104\r\n 118 109  16   8  52 121 118 121 120 105  29   8  11
+    \ 13  30 108\r\n 118 119  95  76 102 120 117 118 119 117 105  92 102 101 106 110\r\n
+    115 118 117 114 116 116 112 113 118 116 117 119 113 116 119 109\r\n\r\n"
+  PatternWidth: .0799999982
   BarcodeID: 0
   MultiConfigFile: 
   NFTDataName: 
