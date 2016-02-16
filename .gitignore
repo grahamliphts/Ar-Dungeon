@@ -245,6 +245,3 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-Ar Dugeon/Temp/UnityTempFile-8dc39b236e3bf4146971f7a192d27d0a
-Ar Dugeon/Library/AnnotationManager
-Ar Dugeon/Library/AssetImportState
