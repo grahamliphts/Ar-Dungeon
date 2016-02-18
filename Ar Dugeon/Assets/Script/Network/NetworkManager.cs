@@ -57,4 +57,16 @@ public class NetworkManager : Photon.PunBehaviour
     {
 
     }
+
+    public void LoadScene()
+    {
+        this.photonView.RPC("LoadSceneForEach", PhotonTargets.All);
+    }
+
+    [PunRPC]
+    void LoadSceneForEach(PhotonMessageInfo info)
+    {
+        Application.LoadLevel("UI_Scene");
+        Debug.Log(string.Format("Info: {0} {1} {2}", info.sender, info.photonView, info.timestamp));
+    }
 }

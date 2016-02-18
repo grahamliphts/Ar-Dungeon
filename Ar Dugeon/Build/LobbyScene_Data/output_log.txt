@@ -18,20 +18,16 @@ Platform assembly: D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\UnityEng
 Loading D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-Platform assembly: D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.186 seconds
+- Completed reload, in  0.150 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\System.dll (this message is harmless)
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 208c -> priority: 1 
-  Thread -> id: 3af0 -> priority: 1 
+  Thread -> id: 29a0 -> priority: 1 
+  Thread -> id: 355c -> priority: 1 
 OnStatusChanged: Connect
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -120,7 +116,37 @@ OnEvent: Event 255.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-OnStatusChanged: Disconnect
+Sending RPC "LoadSceneForEach" to All
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Received RPC: LoadSceneForEach
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Info: #01(master) View (0)1 on NetworkManager (scene) 1727437.983
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1649)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+PUN-instantiated 'NetworkManager' got destroyed by engine. This is OK when loading levels. Otherwise use: PhotonNetwork.Destroy().
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+UnloadTime: 3.751387 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 759.
+Total: 0.880705 ms (FindLiveObjects: 0.073819 ms CreateObjectMapping: 0.041844 ms MarkObjects: 0.750830 ms  DeleteObjects: 0.013816 ms)
+
+OnEvent: Event 254.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+HandleEventLeave for player ID: 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
