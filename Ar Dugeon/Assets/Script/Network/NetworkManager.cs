@@ -7,7 +7,9 @@ public class NetworkManager : Photon.PunBehaviour
 {
 
     public Text connectionParameters;
+    public Text playerName;
     public Text roomName;
+    public Text feedback;
     public bool inRoom = false;
     public Canvas canvas;
     private ListRooms _listRooms;
@@ -17,6 +19,8 @@ public class NetworkManager : Photon.PunBehaviour
         PhotonNetwork.ConnectUsingSettings("0.1");
         PhotonNetwork.logLevel = PhotonLogLevel.Full;
         _listRooms = canvas.GetComponent<ListRooms>();
+        feedback.text = "";
+        feedback.GetComponent<Text>().color = Color.red;
     }
 
 	void Update ()
@@ -24,40 +28,39 @@ public class NetworkManager : Photon.PunBehaviour
         connectionParameters.text = PhotonNetwork.connectionStateDetailed.ToString();
     }
 
-    public override void OnJoinedLobby()
-    {
-        //PhotonNetwork.JoinRandomRoom();
-    }
-
     public void CreateRoom()
     {
-        if(!inRoom)
+        if(roomName.text != "" && playerName.text != "" && !inRoom)
+        {
             PhotonNetwork.CreateRoom(roomName.text, new RoomOptions() { maxPlayers = 4 }, null);
-        inRoom = true;
-    }
-
-    public override void OnReceivedRoomListUpdate()
-    {
-        Debug.Log("OnreceiveRoomList");
-    }
-
-    void OnPhotonRandomJoinFailed()
-    {
-        Debug.Log("Can't join random room!");
-    }
-
-    public void JoinRoom()
-    {
-        if(!inRoom)
-            PhotonNetwork.JoinRoom(_listRooms.selectedRoomName);
-        inRoom = true;
+            PhotonNetwork.player.name = playerName.text;
+            inRoom = true;
+            feedback.text = ""; 
+        }
+        if(roomName.text == "" && playerName.text == "")
+            feedback.text = "Enter a player name and a room name";
+        else if (playerName.text == "" )
+            feedback.text = "Enter a player name";
+        else if (roomName.text == "")
+            feedback.text = "Enter a room name";
     }
     
-    public override void OnJoinedRoom()
+    public void JoinRoom()
     {
-
+        if(playerName.text != "" && _listRooms.selectedRoomName != "" && !inRoom)
+        {
+            PhotonNetwork.JoinRoom(_listRooms.selectedRoomName);
+            PhotonNetwork.player.name = playerName.text;
+            inRoom = true;
+            feedback.text = "";
+        }
+        else if (playerName.text == "" && _listRooms.selectedRoomName == "")
+            feedback.text = "Enter a player name and select a room";
+        else if(playerName.text == "")
+            feedback.text = "Enter a player name";
+        else if (_listRooms.selectedRoomName == "")
+            feedback.text = "Select a room";
     }
-
     public void LoadScene()
     {
         this.photonView.RPC("LoadSceneForEach", PhotonTargets.All);
@@ -68,5 +71,26 @@ public class NetworkManager : Photon.PunBehaviour
     {
         Application.LoadLevel("Main_Scene");
         Debug.Log(string.Format("Info: {0} {1} {2}", info.sender, info.photonView, info.timestamp));
+    }
+
+
+
+    public override void OnJoinedRoom()
+    {
+
+    }
+    public override void OnJoinedLobby()
+    {
+        //PhotonNetwork.JoinRandomRoom();
+    }
+
+    public override void OnReceivedRoomListUpdate()
+    {
+        Debug.Log("OnreceiveRoomList");
+    }
+
+    void OnPhotonRandomJoinFailed()
+    {
+        Debug.Log("Can't join random room!");
     }
 }

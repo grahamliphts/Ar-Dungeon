@@ -10,8 +10,9 @@ public class UIManagerLobby : MonoBehaviour
 
     public GameObject masterPanel;
     public Text NbPlayers;
-	// Use this for initialization
-	void Start ()
+    public Text PlayerName;
+    // Use this for initialization
+    void Start ()
     {
         networkScript = GetComponent<NetworkManager>();
     }
@@ -21,6 +22,7 @@ public class UIManagerLobby : MonoBehaviour
     {
         int nbPlayers = PhotonNetwork.playerList.Length;
         NbPlayers.text = nbPlayers + "/4";
+        PlayerName.text = PhotonNetwork.playerName;
         if (networkScript.inRoom)
         {
             connectionPanel.SetActive(false);
