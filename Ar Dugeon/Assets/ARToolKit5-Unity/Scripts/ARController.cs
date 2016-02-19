@@ -312,7 +312,7 @@ public class ARController : MonoBehaviour
 	// MonoBehavior methods.
 	//
 	
-    void Awake()
+    /*void Awake()
     {
 		//Log(LogTag + "ARController.Awake())");
 		#if UNITY_IOS && !UNITY_EDITOR
@@ -326,7 +326,7 @@ public class ARController : MonoBehaviour
 		} else {
             Log(LogTag + "Error initialising ARToolKit");
         }
-	}
+	}*/
 
 	void OnEnable()
 	{
@@ -359,10 +359,25 @@ public class ARController : MonoBehaviour
 	
 	void Start()
 	{
-		//Log(LogTag + "ARController.Start()");
-        
-		// Ensure ARMarker objects that were instantiated/deserialized before the native interface came up are all loaded.
-		ARMarker[] markers = FindObjectsOfType(typeof(ARMarker)) as ARMarker[];
+        //Log(LogTag + "ARController.Awake())");
+        #if UNITY_IOS && !UNITY_EDITOR
+		        ARNativePluginStatic.aruRequestCamera();
+		        Thread.Sleep(2000);
+        #endif
+        if (PluginFunctions.arwInitialiseAR(TemplateSize, TemplateCountMax))
+        {
+            // ARToolKit version number
+            _version = PluginFunctions.arwGetARToolKitVersion();
+            Log(LogTag + "ARToolKit version " + _version + " initialised.");
+        }
+        else {
+            Log(LogTag + "Error initialising ARToolKit");
+        }
+
+        //Log(LogTag + "ARController.Start()");
+
+        // Ensure ARMarker objects that were instantiated/deserialized before the native interface came up are all loaded.
+        ARMarker[] markers = FindObjectsOfType(typeof(ARMarker)) as ARMarker[];
 		foreach (ARMarker m in markers) {
 			m.Load();
 		}
