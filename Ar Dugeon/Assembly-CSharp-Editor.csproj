@@ -57,20 +57,41 @@
      <Compile Include="Assets\ARToolKit5-Unity\Scripts\Editor\ARTrackedObjectEditor.cs" />
      <Compile Include="Assets\ARToolKit5-Unity\Scripts\Editor\ARTrackedObjectGizmo.cs" />
      <Compile Include="Assets\ARToolKit5-Unity\Scripts\Editor\ARTransitionalCameraEditor.cs" />
-     <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.myField.txt" />
+     <Compile Include="Assets\Photon Unity Networking\Demos\DemoHub\Editor\PunStartup.cs" />
+     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\AccountService.cs" />
+     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonConverter.cs" />
+     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonEditor.cs" />
+     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonGUI.cs" />
+     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonViewHandler.cs" />
+     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonViewInspector.cs" />
+     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PhotonViewPrefabApply.cs" />
+     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\PunSceneSettings.cs" />
+     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\ReorderableListResources.cs" />
+     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\ServerSettingsInspector.cs" />
+     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\Views\PhotonAnimatorViewEditor.cs" />
+     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\Views\PhotonRigidbody2DViewEditor.cs" />
+     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\Views\PhotonRigidbodyViewEditor.cs" />
+     <Compile Include="Assets\Photon Unity Networking\Editor\PhotonNetwork\Views\PhotonTransformViewEditor.cs" />
+     <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.myhiro.txt" />
+     <None Include="Assets\Plugins\Android\res\values\strings.xml" />
+     <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.myArrow.txt" />
+     <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.myY.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Photon3Unity3D.xml" />
+     <None Include="Assets\Plugins\release_history.txt" />
+     <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.myField.txt" />
+     <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.myCross.txt" />
      <None Include="Assets\Plugins\Android\res\xml\preferences.xml" />
+     <None Include="Assets\Photon Unity Networking\Demos\DemoBoxes\Resources\eurof_tt.txt" />
      <None Include="Assets\ARToolKit5-Unity\CHANGELOG.txt" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.kanji.txt" />
      <None Include="Assets\ARToolKit5-Unity\Resources\Shaders\VideoPlaneNoLight.shader" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\phone.hiro.txt" />
-     <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.myhiro.txt" />
-     <None Include="Assets\Plugins\Android\res\values\strings.xml" />
+     <None Include="Assets\Photon Unity Networking\readme.txt" />
      <None Include="Assets\ARToolKit5-Unity\Resources\Shaders\Mask.shader" />
+     <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.myH.txt" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.hiro.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
+     <None Include="Assets\Photon Unity Networking\changelog.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -86,8 +107,14 @@
  <Reference Include="UnityEditor.Networking">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>D:/Github/Ar-Dungeon/Ar Dugeon/Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Photon3Unity3D">
+ <HintPath>D:/Github/Ar-Dungeon/Ar Dugeon/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ </Reference>
+ <Reference Include="websocket-sharp">
+ <HintPath>D:/Github/Ar-Dungeon/Ar Dugeon/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>D:/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -130,6 +157,8 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{D2F97290-A69A-F32D-76A9-516F0E29AB86}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{48F5DFF6-E138-3608-9D31-EA491F873CFD}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
