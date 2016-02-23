@@ -157,6 +157,7 @@
      <Compile Include="Assets\Script\Bag_management.cs" />
      <Compile Include="Assets\Script\LobbyManager.cs" />
      <Compile Include="Assets\Script\Network\ListMap.cs" />
+     <Compile Include="Assets\Script\Network\ListModels.cs" />
      <Compile Include="Assets\Script\Network\ListPlayers.cs" />
      <Compile Include="Assets\Script\Network\ListRooms.cs" />
      <Compile Include="Assets\Script\Network\NetworkManager.cs" />
@@ -170,11 +171,13 @@
      <None Include="Assets\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\Plugins\release_history.txt" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.myField.txt" />
+     <None Include="Assets\Necromancer GUI\Kingthings.txt" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.myCross.txt" />
      <None Include="Assets\Plugins\Android\res\xml\preferences.xml" />
      <None Include="Assets\Photon Unity Networking\Demos\DemoBoxes\Resources\eurof_tt.txt" />
      <None Include="Assets\ARToolKit5-Unity\CHANGELOG.txt" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.kanji.txt" />
+     <None Include="Assets\Necromancer GUI\Readme.txt" />
      <None Include="Assets\ARToolKit5-Unity\Resources\Shaders\VideoPlaneNoLight.shader" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\phone.hiro.txt" />
      <None Include="Assets\Photon Unity Networking\readme.txt" />
@@ -183,11 +186,17 @@
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.myH.txt" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.hiro.txt" />
      <None Include="Assets\Photon Unity Networking\changelog.txt" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
  <HintPath>D:/Github/Ar-Dungeon/Ar Dugeon/Assets/Plugins/Photon3Unity3D.dll</HintPath>
