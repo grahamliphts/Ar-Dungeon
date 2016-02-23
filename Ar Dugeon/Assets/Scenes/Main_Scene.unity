@@ -85,10 +85,152 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &108976654 stripped
+--- !u!1 &17209589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 17209590}
+  m_Layer: 0
+  m_Name: Bone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &17209590
 Transform:
-  m_PrefabParentObject: {fileID: 400074, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-  m_PrefabInternal: {fileID: 1491997055}
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 17209589}
+  m_LocalRotation: {x: .707106829, y: 0, z: -0, w: .707106709}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 284838619}
+  - {fileID: 810847667}
+  m_Father: {fileID: 630106369}
+  m_RootOrder: 0
+--- !u!1 &34373857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100018, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 34373858}
+  m_Layer: 0
+  m_Name: Bone.008
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &34373858
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400018, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 34373857}
+  m_LocalRotation: {x: -.1630674, y: -.175213978, z: .709811628, w: .662477612}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1}
+  m_Children:
+  - {fileID: 801491643}
+  m_Father: {fileID: 630106369}
+  m_RootOrder: 2
+--- !u!1 &118008846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 118008847}
+  m_Layer: 0
+  m_Name: Bone.003
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &118008847
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 118008846}
+  m_LocalRotation: {x: -.00449002115, y: .00888671167, z: .0243579, w: .999653757}
+  m_LocalPosition: {x: -0, y: .00666049542, z: 6.46978138e-10}
+  m_LocalScale: {x: .999999881, y: .999999881, z: .999999881}
+  m_Children:
+  - {fileID: 579284684}
+  m_Father: {fileID: 284838619}
+  m_RootOrder: 0
+--- !u!1 &194038805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100014, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 194038806}
+  m_Layer: 0
+  m_Name: Bone.006
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &194038806
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400014, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 194038805}
+  m_LocalRotation: {x: .0419495441, y: -.0780244842, z: .361834943, w: .928023636}
+  m_LocalPosition: {x: 4.30736696e-11, y: .00219751452, z: -5.55301083e-10}
+  m_LocalScale: {x: 1.00000012, y: .999999881, z: .99999994}
+  m_Children: []
+  m_Father: {fileID: 1787543993}
+  m_RootOrder: 0
+--- !u!1 &208035712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100030, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 485517835}
+  - 95: {fileID: 208035713}
+  m_Layer: 0
+  m_Name: gnomelow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &208035713
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: 46fb2abbf4878da48870b4184fea976b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 208035712}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &215027913
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,6 +337,34 @@ MonoBehaviour:
   OpticalParamsFilename: 
   OpticalParamsFileContents: 
   OpticalEyeLateralOffsetRight: 0
+--- !u!1 &284838618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 284838619}
+  m_Layer: 0
+  m_Name: Bone.001
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &284838619
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 284838618}
+  m_LocalRotation: {x: .548233509, y: .447875053, z: .594147742, w: -.381885529}
+  m_LocalPosition: {x: -0, y: .00999999978, z: 0}
+  m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+  m_Children:
+  - {fileID: 118008847}
+  m_Father: {fileID: 17209590}
+  m_RootOrder: 0
 --- !u!1 &350910717
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,6 +408,20 @@ MonoBehaviour:
   secondsToRemainVisible: 1
   eventReceiver: {fileID: 0}
   _markerTag: Y
+--- !u!4 &485517835
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400030, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 208035712}
+  m_LocalRotation: {x: .70710659, y: 0, z: 0, w: -.707106948}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .0149999997, y: .0149999997, z: .0149999997}
+  m_Children:
+  - {fileID: 630106369}
+  - {fileID: 673280111}
+  m_Father: {fileID: 1047460884}
+  m_RootOrder: 0
 --- !u!1 &547372732
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,6 +465,33 @@ MonoBehaviour:
   secondsToRemainVisible: 1
   eventReceiver: {fileID: 0}
   _markerTag: field
+--- !u!1 &579284683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100010, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 579284684}
+  m_Layer: 0
+  m_Name: Bone.004
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &579284684
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400010, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 579284683}
+  m_LocalRotation: {x: .0629597381, y: .0969800726, z: -.365268946, w: .923693419}
+  m_LocalPosition: {x: -3.02679826e-11, y: .00198173057, z: -1.06520015e-09}
+  m_LocalScale: {x: 1.00000012, y: 1.00000024, z: 1}
+  m_Children: []
+  m_Father: {fileID: 118008847}
+  m_RootOrder: 0
 --- !u!1 &621587463
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,6 +578,332 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!1 &630106368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 630106369}
+  m_Layer: 0
+  m_Name: Armature
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &630106369
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 630106368}
+  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106709}
+  m_LocalPosition: {x: 0, y: 1.65969157, z: 0}
+  m_LocalScale: {x: 166.686493, y: 166.686493, z: 166.686493}
+  m_Children:
+  - {fileID: 17209590}
+  - {fileID: 2143764013}
+  - {fileID: 34373858}
+  m_Father: {fileID: 485517835}
+  m_RootOrder: 0
+--- !u!1 &673280110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100042, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 673280111}
+  - 137: {fileID: 673280112}
+  m_Layer: 10
+  m_Name: RetopoGroup1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &673280111
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400042, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 673280110}
+  m_LocalRotation: {x: 8.14603354e-08, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children: []
+  m_Father: {fileID: 485517835}
+  m_RootOrder: 1
+--- !u!137 &673280112
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13700000, guid: 46fb2abbf4878da48870b4184fea976b,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 673280110}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 466ba4225b9fccd4e9d42dab7d68a5e8, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_Mesh: {fileID: 4300000, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_Bones:
+  - {fileID: 17209590}
+  - {fileID: 284838619}
+  - {fileID: 118008847}
+  - {fileID: 579284684}
+  - {fileID: 810847667}
+  - {fileID: 1787543993}
+  - {fileID: 194038806}
+  - {fileID: 2143764013}
+  - {fileID: 892604269}
+  - {fileID: 1026101194}
+  - {fileID: 34373858}
+  - {fileID: 801491643}
+  - {fileID: 699465721}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 17209590}
+  m_AABB:
+    m_Center: {x: 2.30781734e-06, y: .00553411711, z: .0030559306}
+    m_Extent: {x: .0160589162, y: .0158279575, z: .00888234377}
+  m_DirtyAABB: 0
+--- !u!1 &699465720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100026, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 699465721}
+  m_Layer: 0
+  m_Name: Bone.012
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &699465721
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400026, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 699465720}
+  m_LocalRotation: {x: -.0581394844, y: -.22943981, z: -.0301248059, w: .971117795}
+  m_LocalPosition: {x: 7.45058043e-11, y: .00299690291, z: 3.72529022e-11}
+  m_LocalScale: {x: 1.00000012, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 801491643}
+  m_RootOrder: 0
+--- !u!1 &801491642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100022, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 801491643}
+  m_Layer: 0
+  m_Name: Bone.010
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &801491643
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400022, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801491642}
+  m_LocalRotation: {x: -.452324152, y: -.198994637, z: .200008079, w: .846050084}
+  m_LocalPosition: {x: -1.06228975e-11, y: .00342534319, z: -4.54019738e-11}
+  m_LocalScale: {x: 1, y: .999999821, z: .99999994}
+  m_Children:
+  - {fileID: 699465721}
+  m_Father: {fileID: 34373858}
+  m_RootOrder: 0
+--- !u!1 &810847666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 810847667}
+  m_Layer: 0
+  m_Name: Bone.002
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &810847667
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 810847666}
+  m_LocalRotation: {x: -.554976881, y: .439273089, z: .598043442, w: .376010478}
+  m_LocalPosition: {x: -0, y: .00999999978, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1787543993}
+  m_Father: {fileID: 17209590}
+  m_RootOrder: 1
+--- !u!1001 &826253445
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2022984168}
+    m_Modifications:
+    - target: {fileID: 400000, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: .70710659
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -.707106948
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_LocalScale.x
+      value: .0500000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_LocalScale.y
+      value: .0500000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_LocalScale.z
+      value: .0500000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a961b53f328496d45b4234d242857f00, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a961b53f328496d45b4234d242857f00, type: 3}
+  m_IsPrefabParent: 0
+--- !u!4 &826253446 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: a961b53f328496d45b4234d242857f00, type: 3}
+  m_PrefabInternal: {fileID: 826253445}
+--- !u!1 &892604268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100020, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 892604269}
+  m_Layer: 0
+  m_Name: Bone.009
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &892604269
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400020, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 892604268}
+  m_LocalRotation: {x: -.324367106, y: .56103003, z: -.426860601, w: .630730808}
+  m_LocalPosition: {x: 1.00861539e-12, y: .00362834544, z: -4.88944336e-11}
+  m_LocalScale: {x: 1, y: .999999821, z: .99999994}
+  m_Children:
+  - {fileID: 1026101194}
+  m_Father: {fileID: 2143764013}
+  m_RootOrder: 0
 --- !u!1 &925729594
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,7 +1004,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 939902459}
   m_LocalRotation: {x: .70710659, y: 0, z: 0, w: -.707106948}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0, z: .0599999987}
   m_LocalScale: {x: .0799999982, y: .0799999982, z: .0799999982}
   m_Children: []
   m_Father: {fileID: 547372733}
@@ -728,9 +1265,40 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a3403447975a6e1429456e6e20138114, type: 2}
+    - target: {fileID: 9500000, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1026101193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100024, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1026101194}
+  m_Layer: 0
+  m_Name: Bone.011
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1026101194
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400024, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1026101193}
+  m_LocalRotation: {x: -.0702318028, y: .0362636037, z: .000626829686, w: .996871173}
+  m_LocalPosition: {x: 4.19095141e-11, y: .00269212341, z: 3.72529022e-11}
+  m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1}
+  m_Children: []
+  m_Father: {fileID: 892604269}
+  m_RootOrder: 0
 --- !u!1 &1047460880
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,7 +1325,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 108976654}
+  - {fileID: 485517835}
   m_Father: {fileID: 1208817454}
   m_RootOrder: 2
 --- !u!114 &1047460885
@@ -1008,296 +1576,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 023a6543f05eabf44bd7936b1d12b02f, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1275482632
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1275482633}
-  - 33: {fileID: 1275482636}
-  - 136: {fileID: 1275482635}
-  - 23: {fileID: 1275482634}
-  m_Layer: 10
-  m_Name: Capsule
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1275482633
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1275482632}
-  m_LocalRotation: {x: .70710659, y: 0, z: 0, w: -.707106948}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .0199999996, y: .0199999996, z: .0199999996}
-  m_Children: []
-  m_Father: {fileID: 2022984168}
-  m_RootOrder: 0
---- !u!23 &1275482634
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1275482632}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: .5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!136 &1275482635
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1275482632}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1275482636
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1275482632}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1491997055
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1047460884}
-    m_Modifications:
-    - target: {fileID: 400074, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -.707106829
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: .707106709
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_LocalScale.x
-      value: .0199999996
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_LocalScale.y
-      value: .0199999996
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_LocalScale.z
-      value: .0199999996
-      objectReference: {fileID: 0}
-    - target: {fileID: 100044, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100014, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100012, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100042, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100050, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100020, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100018, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100048, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100030, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100060, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100006, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100062, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100028, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100032, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100058, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100010, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100026, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100040, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100056, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100004, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100054, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100034, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100024, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100046, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100016, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100070, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100008, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100038, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100068, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100022, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100052, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100066, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100064, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100036, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100072, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 100074, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: e63e6df513582564d8e681953e7bf357, type: 2}
-    - target: {fileID: 13700000, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3b16d5cf51eb6524db58cd3865870bb9, type: 2}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
-  m_IsPrefabParent: 0
 --- !u!4 &1601704950 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400074, guid: 935dacd59b6059f4caeb93a2b5f2a0a8, type: 3}
@@ -1345,6 +1623,34 @@ MonoBehaviour:
   secondsToRemainVisible: 1
   eventReceiver: {fileID: 0}
   _markerTag: H
+--- !u!1 &1787543992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100012, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1787543993}
+  m_Layer: 0
+  m_Name: Bone.005
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1787543993
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400012, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1787543992}
+  m_LocalRotation: {x: .0408263318, y: -.0140505731, z: -.0173832271, w: .998916209}
+  m_LocalPosition: {x: -5.58793532e-11, y: .0066323448, z: -1.84809321e-11}
+  m_LocalScale: {x: 1, y: .99999994, z: 1}
+  m_Children:
+  - {fileID: 194038806}
+  m_Father: {fileID: 810847667}
+  m_RootOrder: 0
 --- !u!1 &2022984167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,7 +1677,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1275482633}
+  - {fileID: 826253446}
   m_Father: {fileID: 1208817454}
   m_RootOrder: 4
 --- !u!114 &2022984169
@@ -1527,6 +1833,14 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: f5cda52c333685d4f9cea200e7bccb27, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e63e6df513582564d8e681953e7bf357, type: 2}
+    - target: {fileID: 9500000, guid: f5cda52c333685d4f9cea200e7bccb27, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5cda52c333685d4f9cea200e7bccb27, type: 3}
   m_IsPrefabParent: 0
@@ -1634,171 +1948,170 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MarkerType: 0
   Tag: hiro
-  PatternFilenameIndex: 6
-  PatternFilename: patt.myhiro
-  PatternContents: " 209 230 231 238 240 240 241 242 246 248 247 248 252 251 248 241\r\n
-    217 240 243 248 250 251 251 255 252 254 253 254 254 255 255 251\r\n 222 246 249
-    248 254 251 254 255 255 255 255 255 255 255 255 250\r\n 221 252 253 253 252 253
-    255 254 255 255 255 255 255 255 255 245\r\n 230 246 247 252 252 254 254 255 254
-    255 255 255 255 255 255 242\r\n 235 251 254 254 254 255 255 255 254 255 255 255
-    255 255 255 240\r\n 227 245 246 253 255 255 254 255 255 255 255 255 255 255 255
-    251\r\n 216 249 252 255 255 255 255 255 255 255 255 255 255 255 255 255\r\n 212
-    249 253 254 254 254 254 255 255 255 255 255 255 255 255 255\r\n 201 202 251 250
-    197 243 203 226 255 255 255 255 255 255 255 255\r\n 160 136 243 248 120 222 163
-    203 248 248 248 255 239 238 252 254\r\n 156 119 201 203 109 223 134 181 159 137
-    202 177 142 147 169 249\r\n 163  77 123 142 101 224 139 175 152 187 240 124 242
-    251 150 228\r\n 164 118 240 245 108 215 140 181 152 184 236 132 247 254 161 226\r\n
-    170 135 247 246 112 202 141 182 151 183 251 152 165 185 156 240\r\n 199 219 239
-    243 224 244 218 232 236 241 254 246 205 198 247 240\r\n 164 170 172 176 177 178
-    180 178 181 181 181 182 183 184 183 175\r\n 170 175 177 175 180 183 183 183 185
-    184 186 188 189 189 190 178\r\n 171 173 176 178 182 183 187 184 185 187 188 188
-    189 192 191 181\r\n 175 177 177 183 183 185 185 184 189 187 187 190 190 190 194
-    178\r\n 177 178 179 181 184 184 183 187 189 190 191 191 192 191 192 175\r\n 178
-    181 182 182 182 184 186 187 189 189 192 193 195 194 195 176\r\n 182 184 184 182
-    184 184 188 186 190 192 194 194 194 194 197 189\r\n 180 183 183 185 186 185 189
-    189 189 192 194 194 196 197 196 193\r\n 174 181 184 183 186 188 188 189 192 192
-    196 197 198 199 198 194\r\n 150 142 184 185 136 180 135 164 193 195 198 200 197
-    197 199 193\r\n 113 100 184 175  65 167  99 147 188 188 187 196 183 185 199 192\r\n
-    110  90 157 143  58 168  68 130  95  80 143 116  75  79 119 192\r\n 108  37  70
-    \ 74  53 170  76 129  86 136 173  60 185 185  82 167\r\n 108  74 184 175  60 173
-    \ 79 134  86 131 166  73 193 196  89 163\r\n 116  79 185 176  58 154  76 138  82
-    124 191  81 117 124  84 179\r\n 164 162 183 183 159 182 150 172 169 184 197 182
-    129 129 191 180\r\n 101 100  99 101  97  98 102  98  99 100 104 103 104 102 102
-    \ 95\r\n 105  98  99 101  96  97 100  97  96  99 101 105 106 103 105 101\r\n 107
-    \ 99 102 103  99  99  99  98 102 102 105 104 101 103 103  89\r\n  99  98 101  97
-    \ 97 101 104 100 101 105 105 104 106 103 100  88\r\n 107  97  99  96  97 100 101
-    100 100 104 108 105 109 109 101  89\r\n 108  97  98  98  99 100 103 102 101 103
-    110 105 110 110 107  86\r\n 102  93  97 100 103  99 104 107 105 102 105 109 110
-    109 107  96\r\n 103 100  99 101 104 105 104 105 105 109 112 109 108 109 110 102\r\n
-    \ 97  98  98  99 104 105 104 106 107 108 109 108 109 109 113 105\r\n  87  80 101
-    \ 94  60 104  64  91 107 108 107 105 112 110 112 105\r\n  49  51 103  95   9  90
-    \ 26  78 104 108 106 107  95 102 114 105\r\n  51  42  91  70   6  94   6  71  29
-    \ 19  68  44  11  18  53 105\r\n  51   2  23  18  10  99  20  72  24  80  91  13
-    111 100  18  97\r\n  45  25 105  81   8 105  19  70  23  69  82  21 119 109  21
-    \ 90\r\n  53  29 107  86   3  88  18  77  22  63 102  19  59  58  27  99\r\n  97
-    \ 90 100  95  76  98  71  95  90  97 114  98  55  59 114  94\r\n\r\n 241 251 250
-    245 242 240 251 255 255 255 254 249 228 226 240 240\r\n 248 255 255 255 255 255
-    255 255 255 255 252 169 150 161 156 247\r\n 251 255 255 255 255 255 255 255 255
-    255 238 147 251 254 185 198\r\n 252 254 255 255 255 255 255 255 255 255 239 142
-    242 247 165 205\r\n 248 254 255 255 255 255 255 255 255 255 255 177 124 132 152
-    246\r\n 247 253 255 255 255 255 255 255 255 255 248 202 240 236 251 254\r\n 248
-    254 255 255 255 255 255 255 255 255 248 137 187 184 183 241\r\n 246 252 255 255
-    254 254 255 255 255 255 248 159 152 152 151 236\r\n 242 255 255 254 255 255 255
-    255 255 226 203 181 175 181 182 232\r\n 241 251 254 255 254 255 254 255 254 203
-    163 134 139 140 141 218\r\n 240 251 251 253 254 255 255 255 254 243 222 223 224
-    215 202 244\r\n 240 250 254 252 252 254 255 255 254 197 120 109 101 108 112 224\r\n
-    238 248 248 253 252 254 253 255 254 250 248 203 142 245 246 243\r\n 231 243 249
-    253 247 254 246 252 253 251 243 201 123 240 247 239\r\n 230 240 246 252 246 251
-    245 249 249 202 136 119  77 118 135 219\r\n 209 217 222 221 230 235 227 216 212
-    201 160 156 163 164 170 199\r\n 175 178 181 178 175 176 189 193 194 193 192 192
-    167 163 179 180\r\n 183 190 191 194 192 195 197 196 198 199 199 119  82  89  84
-    191\r\n 184 189 192 190 191 194 194 197 199 197 185  79 185 196 124 129\r\n 183
-    189 189 190 192 195 194 196 198 197 183  75 185 193 117 129\r\n 182 188 188 190
-    191 193 194 194 197 200 196 116  60  73  81 182\r\n 181 186 188 187 191 192 194
-    194 196 198 187 143 173 166 191 197\r\n 181 184 187 187 190 189 192 192 192 195
-    188  80 136 131 124 184\r\n 181 185 185 189 189 189 190 189 192 193 188  95  86
-    \ 86  82 169\r\n 178 183 184 184 187 187 186 189 189 164 147 130 129 134 138 172\r\n
-    180 183 187 185 183 186 188 189 188 135  99  68  76  79  76 150\r\n 178 183 183
-    185 184 184 184 185 188 180 167 168 170 173 154 182\r\n 177 180 182 183 184 182
-    184 186 186 136  65  58  53  60  58 159\r\n 176 175 178 183 181 182 182 185 183
-    185 175 143  74 175 176 183\r\n 172 177 176 177 179 182 184 183 184 184 184 157
-    \ 70 184 185 183\r\n 170 175 173 177 178 181 184 183 181 142 100  90  37  74  79
-    162\r\n 164 170 171 175 177 178 182 180 174 150 113 110 108 108 116 164\r\n  95
-    101  89  88  89  86  96 102 105 105 105 105  97  90  99  94\r\n 102 105 103 100
-    101 107 107 110 113 112 114  53  18  21  27 114\r\n 102 103 103 103 109 110 109
-    109 109 110 102  18 100 109  58  59\r\n 104 106 101 106 109 110 110 108 109 112
-    \ 95  11 111 119  59  55\r\n 103 105 104 104 105 105 109 109 108 105 107  44  13
-    \ 21  19  98\r\n 104 101 105 105 108 110 105 112 109 107 106  68  91  82 102 114\r\n
-    100  99 102 105 104 103 102 109 108 108 108  19  80  69  63  97\r\n  99  96 102
-    101 100 101 105 105 107 107 104  29  24  23  22  90\r\n  98  97  98 100 100 102
-    107 105 106  91  78  71  72  70  77  95\r\n 102 100  99 104 101 103 104 104 104
-    \ 64  26   6  20  19  18  71\r\n  98  97  99 101 100 100  99 105 105 104  90  94
-    \ 99 105  88  98\r\n  97  96  99  97  97  99 103 104 104  60   9   6  10   8   3
-    \ 76\r\n 101 101 103  97  96  98 100 101  99  94  95  70  18  81  86  95\r\n  99
-    \ 99 102 101  99  98  97  99  98 101 103  91  23 105 107 100\r\n 100  98  99  98
-    \ 97  97  93 100  98  80  51  42   2  25  29  90\r\n 101 105 107  99 107 108 102
-    103  97  87  49  51  51  45  53  97\r\n\r\n 240 247 198 205 246 254 241 236 232
-    218 244 224 243 239 219 199\r\n 240 156 185 165 152 251 183 151 182 141 202 112
-    246 247 135 170\r\n 226 161 254 247 132 236 184 152 181 140 215 108 245 240 118
-    164\r\n 228 150 251 242 124 240 187 152 175 139 224 101 142 123  77 163\r\n 249
-    169 147 142 177 202 137 159 181 134 223 109 203 201 119 156\r\n 254 252 238 239
-    255 248 248 248 203 163 222 120 248 243 136 160\r\n 255 255 255 255 255 255 255
-    255 226 203 243 197 250 251 202 201\r\n 255 255 255 255 255 255 255 255 255 254
-    254 254 254 253 249 212\r\n 255 255 255 255 255 255 255 255 255 255 255 255 255
-    252 249 216\r\n 251 255 255 255 255 255 255 255 255 254 255 255 253 246 245 227\r\n
-    240 255 255 255 255 255 255 254 255 255 255 254 254 254 251 235\r\n 242 255 255
-    255 255 255 255 254 255 254 254 252 252 247 246 230\r\n 245 255 255 255 255 255
-    255 255 254 255 253 252 253 253 252 221\r\n 250 255 255 255 255 255 255 255 255
-    254 251 254 248 249 246 222\r\n 251 255 255 254 254 253 254 252 255 251 251 250
-    248 243 240 217\r\n 241 248 251 252 248 247 248 246 242 241 240 240 238 231 230
-    209\r\n 180 191 129 129 182 197 184 169 172 150 182 159 183 183 162 164\r\n 179
-    \ 84 124 117  81 191 124  82 138  76 154  58 176 185  79 116\r\n 163  89 196 193
-    \ 73 166 131  86 134  79 173  60 175 184  74 108\r\n 167  82 185 185  60 173 136
-    \ 86 129  76 170  53  74  70  37 108\r\n 192 119  79  75 116 143  80  95 130  68
-    168  58 143 157  90 110\r\n 192 199 185 183 196 187 188 188 147  99 167  65 175
-    184 100 113\r\n 193 199 197 197 200 198 195 193 164 135 180 136 185 184 142 150\r\n
-    194 198 199 198 197 196 192 192 189 188 188 186 183 184 181 174\r\n 193 196 197
-    196 194 194 192 189 189 189 185 186 185 183 183 180\r\n 189 197 194 194 194 194
-    192 190 186 188 184 184 182 184 184 182\r\n 176 195 194 195 193 192 189 189 187
-    186 184 182 182 182 181 178\r\n 175 192 191 192 191 191 190 189 187 183 184 184
-    181 179 178 177\r\n 178 194 190 190 190 187 187 189 184 185 185 183 183 177 177
-    175\r\n 181 191 192 189 188 188 187 185 184 187 183 182 178 176 173 171\r\n 178
-    190 189 189 188 186 184 185 183 183 183 180 175 177 175 170\r\n 175 183 184 183
-    182 181 181 181 178 180 178 177 176 172 170 164\r\n  94 114  59  55  98 114  97
-    \ 90  95  71  98  76  95 100  90  97\r\n  99  27  58  59  19 102  63  22  77  18
-    \ 88   3  86 107  29  53\r\n  90  21 109 119  21  82  69  23  70  19 105   8  81
-    105  25  45\r\n  97  18 100 111  13  91  80  24  72  20  99  10  18  23   2  51\r\n
-    105  53  18  11  44  68  19  29  71   6  94   6  70  91  42  51\r\n 105 114 102
-    \ 95 107 106 108 104  78  26  90   9  95 103  51  49\r\n 105 112 110 112 105 107
-    108 107  91  64 104  60  94 101  80  87\r\n 105 113 109 109 108 109 108 107 106
-    104 105 104  99  98  98  97\r\n 102 110 109 108 109 112 109 105 105 104 105 104
-    101  99 100 103\r\n  96 107 109 110 109 105 102 105 107 104  99 103 100  97  93
-    102\r\n  86 107 110 110 105 110 103 101 102 103 100  99  98  98  97 108\r\n  89
-    101 109 109 105 108 104 100 100 101 100  97  96  99  97 107\r\n  88 100 103 106
-    104 105 105 101 100 104 101  97  97 101  98  99\r\n  89 103 103 101 104 105 102
-    102  98  99  99  99 103 102  99 107\r\n 101 105 103 106 105 101  99  96  97 100
-    \ 97  96 101  99  98 105\r\n  95 102 102 104 103 104 100  99  98 102  98  97 101
-    \ 99 100 101\r\n\r\n 199 170 164 163 156 160 201 212 216 227 235 230 221 222 217
-    209\r\n 219 135 118  77 119 136 202 249 249 245 251 246 252 246 240 230\r\n 239
-    247 240 123 201 243 251 253 252 246 254 247 253 249 243 231\r\n 243 246 245 142
-    203 248 250 254 255 253 254 252 253 248 248 238\r\n 224 112 108 101 109 120 197
-    254 255 255 254 252 252 254 250 240\r\n 244 202 215 224 223 222 243 254 255 255
-    255 254 253 251 251 240\r\n 218 141 140 139 134 163 203 254 255 254 255 254 255
-    254 251 241\r\n 232 182 181 175 181 203 226 255 255 255 255 255 254 255 255 242\r\n
-    236 151 152 152 159 248 255 255 255 255 254 254 255 255 252 246\r\n 241 183 184
-    187 137 248 255 255 255 255 255 255 255 255 254 248\r\n 254 251 236 240 202 248
-    255 255 255 255 255 255 255 255 253 247\r\n 246 152 132 124 177 255 255 255 255
-    255 255 255 255 255 254 248\r\n 205 165 247 242 142 239 255 255 255 255 255 255
-    255 255 254 252\r\n 198 185 254 251 147 238 255 255 255 255 255 255 255 255 255
-    251\r\n 247 156 161 150 169 252 255 255 255 255 255 255 255 255 255 248\r\n 240
-    240 226 228 249 254 255 255 255 251 240 242 245 250 251 241\r\n 164 116 108 108
-    110 113 150 174 180 182 178 177 175 171 170 164\r\n 162  79  74  37  90 100 142
-    181 183 184 181 178 177 173 175 170\r\n 183 185 184  70 157 184 184 184 183 184
-    182 179 177 176 177 172\r\n 183 176 175  74 143 175 185 183 185 182 182 181 183
-    178 175 176\r\n 159  58  60  53  58  65 136 186 186 184 182 184 183 182 180 177\r\n
-    182 154 173 170 168 167 180 188 185 184 184 184 185 183 183 178\r\n 150  76  79
-    \ 76  68  99 135 188 189 188 186 183 185 187 183 180\r\n 172 138 134 129 130 147
-    164 189 189 186 187 187 184 184 183 178\r\n 169  82  86  86  95 188 193 192 189
-    190 189 189 189 185 185 181\r\n 184 124 131 136  80 188 195 192 192 192 189 190
-    187 187 184 181\r\n 197 191 166 173 143 187 198 196 194 194 192 191 187 188 186
-    181\r\n 182  81  73  60 116 196 200 197 194 194 193 191 190 188 188 182\r\n 129
-    117 193 185  75 183 197 198 196 194 195 192 190 189 189 183\r\n 129 124 196 185
-    \ 79 185 197 199 197 194 194 191 190 192 189 184\r\n 191  84  89  82 119 199 199
-    198 196 197 195 192 194 191 190 183\r\n 180 179 163 167 192 192 193 194 193 189
-    176 175 178 181 178 175\r\n  97  53  45  51  51  49  87  97 103 102 108 107  99
-    107 105 101\r\n  90  29  25   2  42  51  80  98 100  93  97  97  98  99  98 100\r\n
-    100 107 105  23  91 103 101  98  99  97  98  99 101 102  99  99\r\n  95  86  81
-    \ 18  70  95  94  99 101 100  98  96  97 103 101 101\r\n  76   3   8  10   6   9
-    \ 60 104 104 103  99  97  97  99  96  97\r\n  98  88 105  99  94  90 104 105 105
-    \ 99 100 100 101  99  97  98\r\n  71  18  19  20   6  26  64 104 104 104 103 101
-    104  99 100 102\r\n  95  77  70  72  71  78  91 106 105 107 102 100 100  98  97
-    \ 98\r\n  90  22  23  24  29 104 107 107 105 105 101 100 101 102  96  99\r\n  97
-    \ 63  69  80  19 108 108 108 109 102 103 104 105 102  99 100\r\n 114 102  82  91
-    \ 68 106 107 109 112 105 110 108 105 105 101 104\r\n  98  19  21  13  44 107 105
-    108 109 109 105 105 104 104 105 103\r\n  55  59 119 111  11  95 112 109 108 110
-    110 109 106 101 106 104\r\n  59  58 109 100  18 102 110 109 109 109 110 109 103
-    103 103 102\r\n 114  27  21  18  53 114 112 113 110 107 107 101 100 103 105 102\r\n
-    \ 94  99  90  97 105 105 105 105 102  96  86  89  88  89 101  95\r\n\r\n"
+  PatternFilenameIndex: 0
+  PatternFilename: patt.hiro
+  PatternContents: " 234 235 240 233 240 234 240 235 240 237 240 238 240 240 240 232\n
+    229 240 240 240 240 240 240 240 240 240 240 240 240 240 240 228\n 227 240 240
+    240 240 240 240 240 240 240 240 240 240 240 240 239\n 240 240 240 240 240 240
+    240 240 240 240 240 240 240 240 240 240\n 236 240 240 240 240 240 240 240 240
+    240 240 240 240 240 240 240\n 234 240 240 240 240 240 240 240 240 240 240 240
+    240 240 240 240\n 236 240 240 240 240 240 240 240 240 240 240 240 240 240 240
+    240\n 231 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240\n 229 240
+    240 240 240 240 240 240 240 240 240 240 240 240 240 240\n 225 149 240 240 186
+    216 225 174 240 240 240 237 238 240 240 240\n 150 107 238 231  75 208 115 147
+    238 228 223 226 237 180 226 240\n 150  62 181 213  62 187 113 169 197  72  29
+    237 120  50  53 207\n 149  63  47  78  53 184 113 101 142   5 150 150  45 217
+    186  83\n 121  84 220 222  58 180 121  92 128 109 237 124 155 232 161  64\n 149
+    \ 71 240 240  76 210  98 109 122 108 240 129  51 119 161 155\n 149 186 240 240
+    \ 98 219 135 152 207 191 236 227 152  77 175 209\n 235 235 240 233 240 234 240
+    235 240 236 240 238 240 240 240 240\n 229 240 240 240 240 240 240 240 240 240
+    240 240 240 240 240 240\n 227 240 240 240 240 240 240 240 240 240 240 240 240
+    240 240 240\n 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240\n
+    236 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240\n 234 240 240
+    240 240 240 240 240 240 240 240 240 240 240 240 240\n 236 240 240 240 240 240
+    240 240 240 240 240 240 240 240 240 240\n 232 240 240 240 240 240 240 240 240
+    240 240 240 240 240 240 240\n 229 240 240 240 240 240 240 240 240 240 240 240
+    240 240 240 240\n 225 156 240 240 186 216 225 186 240 240 240 240 240 240 240
+    240\n 150 117 240 231  72 206 115 162 240 232 223 237 240 180 226 240\n 150  74
+    187 213  51 184 103 168 197  78  29 237 120  50  53 216\n 144  77  51  74  61
+    184 106 101 142   5 150 152  52 217 186  85\n 117  89 219 219  65 184 121  92
+    128 100 236 125 156 240 170  73\n 148  71 240 240  76 210 109 109 121  99 240
+    137  51 120 166 164\n 140 186 240 240  98 220 150 156 207 192 236 230 152  77
+    176 212\n 234 235 240 233 240 234 240 235 240 236 240 238 240 240 240 233\n 229
+    240 240 240 240 240 240 240 240 240 240 240 240 240 240 239\n 227 240 240 240
+    240 240 240 240 240 240 240 240 240 240 240 240\n 240 240 240 240 240 240 240
+    240 240 240 240 240 240 240 240 240\n 234 240 240 240 240 240 240 240 240 240
+    240 240 240 240 240 240\n 232 240 240 240 240 240 240 240 240 240 240 240 240
+    240 240 240\n 235 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240\n
+    232 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240\n 228 240 240
+    240 240 240 240 240 240 240 240 240 240 240 240 240\n 225 156 240 240 182 212
+    225 180 240 240 240 240 240 240 240 240\n 150 116 238 228  66 205 115 151 238
+    236 225 240 240 180 226 240\n 156  84 186 211  47 184 109 170 200  92  30 240
+    120  50  53 216\n 147  83  51  73  50 184 106 110 148  17 151 150  45 217 186
+    \ 85\n 127  98 219 219  58 179 109 101 128 107 237 125 155 240 163  72\n 155  86
+    240 240  76 201  85 108 121  95 232 137  51 118 153 155\n 149 189 240 240  98
+    220 141 154 206 178 235 230 152  77 175 209\n\n 232 228 239 240 240 240 240 240
+    240 240 240 207  83  64 155 209\n 240 240 240 240 240 240 240 240 240 240 226
+    \ 53 186 161 161 175\n 240 240 240 240 240 240 240 240 240 240 180  50 217 232
+    119  77\n 240 240 240 240 240 240 240 240 240 238 237 120  45 155  51 152\n 238
+    240 240 240 240 240 240 240 240 237 226 237 150 124 129 227\n 240 240 240 240
+    240 240 240 240 240 240 223  29 150 237 240 236\n 237 240 240 240 240 240 240
+    240 240 240 228  72   5 109 108 191\n 240 240 240 240 240 240 240 240 240 240
+    238 197 142 128 122 207\n 235 240 240 240 240 240 240 240 240 174 147 169 101
+    \ 92 109 152\n 240 240 240 240 240 240 240 240 240 225 115 113 113 121  98 135\n
+    234 240 240 240 240 240 240 240 240 216 208 187 184 180 210 219\n 240 240 240
+    240 240 240 240 240 240 186  75  62  53  58  76  98\n 233 240 240 240 240 240
+    240 240 240 240 231 213  78 222 240 240\n 240 240 240 240 240 240 240 240 240
+    240 238 181  47 220 240 240\n 235 240 240 240 240 240 240 240 240 149 107  62
+    \ 63  84  71 186\n 234 229 227 240 236 234 236 231 229 225 150 150 149 121 149
+    149\n 240 240 240 240 240 240 240 240 240 240 240 216  85  73 164 212\n 240 240
+    240 240 240 240 240 240 240 240 226  53 186 170 166 176\n 240 240 240 240 240
+    240 240 240 240 240 180  50 217 240 120  77\n 240 240 240 240 240 240 240 240
+    240 240 240 120  52 156  51 152\n 238 240 240 240 240 240 240 240 240 240 237
+    237 152 125 137 230\n 240 240 240 240 240 240 240 240 240 240 223  29 150 236
+    240 236\n 236 240 240 240 240 240 240 240 240 240 232  78   5 100  99 192\n 240
+    240 240 240 240 240 240 240 240 240 240 197 142 128 121 207\n 235 240 240 240
+    240 240 240 240 240 186 162 168 101  92 109 156\n 240 240 240 240 240 240 240
+    240 240 225 115 103 106 121 109 150\n 234 240 240 240 240 240 240 240 240 216
+    206 184 184 184 210 220\n 240 240 240 240 240 240 240 240 240 186  72  51  61
+    \ 65  76  98\n 233 240 240 240 240 240 240 240 240 240 231 213  74 219 240 240\n
+    240 240 240 240 240 240 240 240 240 240 240 187  51 219 240 240\n 235 240 240
+    240 240 240 240 240 240 156 117  74  77  89  71 186\n 235 229 227 240 236 234
+    236 232 229 225 150 150 144 117 148 140\n 233 239 240 240 240 240 240 240 240
+    240 240 216  85  72 155 209\n 240 240 240 240 240 240 240 240 240 240 226  53
+    186 163 153 175\n 240 240 240 240 240 240 240 240 240 240 180  50 217 240 118
+    \ 77\n 240 240 240 240 240 240 240 240 240 240 240 120  45 155  51 152\n 238 240
+    240 240 240 240 240 240 240 240 240 240 150 125 137 230\n 240 240 240 240 240
+    240 240 240 240 240 225  30 151 237 232 235\n 236 240 240 240 240 240 240 240
+    240 240 236  92  17 107  95 178\n 240 240 240 240 240 240 240 240 240 240 238
+    200 148 128 121 206\n 235 240 240 240 240 240 240 240 240 180 151 170 110 101
+    108 154\n 240 240 240 240 240 240 240 240 240 225 115 109 106 109  85 141\n 234
+    240 240 240 240 240 240 240 240 212 205 184 184 179 201 220\n 240 240 240 240
+    240 240 240 240 240 182  66  47  50  58  76  98\n 233 240 240 240 240 240 240
+    240 240 240 228 211  73 219 240 240\n 240 240 240 240 240 240 240 240 240 240
+    238 186  51 219 240 240\n 235 240 240 240 240 240 240 240 240 156 116  84  83
+    \ 98  86 189\n 234 229 227 240 234 232 235 232 228 225 150 156 147 127 155 149\n\n
+    209 175  77 152 227 236 191 207 152 135 219  98 240 240 186 149\n 155 161 119
+    \ 51 129 240 108 122 109  98 210  76 240 240  71 149\n  64 161 232 155 124 237
+    109 128  92 121 180  58 222 220  84 121\n  83 186 217  45 150 150   5 142 101
+    113 184  53  78  47  63 149\n 207  53  50 120 237  29  72 197 169 113 187  62
+    213 181  62 150\n 240 226 180 237 226 223 228 238 147 115 208  75 231 238 107
+    150\n 240 240 240 238 237 240 240 240 174 225 216 186 240 240 149 225\n 240 240
+    240 240 240 240 240 240 240 240 240 240 240 240 240 229\n 240 240 240 240 240
+    240 240 240 240 240 240 240 240 240 240 231\n 240 240 240 240 240 240 240 240
+    240 240 240 240 240 240 240 236\n 240 240 240 240 240 240 240 240 240 240 240
+    240 240 240 240 234\n 240 240 240 240 240 240 240 240 240 240 240 240 240 240
+    240 236\n 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240\n 239
+    240 240 240 240 240 240 240 240 240 240 240 240 240 240 227\n 228 240 240 240
+    240 240 240 240 240 240 240 240 240 240 240 229\n 232 240 240 240 238 240 237
+    240 235 240 234 240 233 240 235 234\n 212 176  77 152 230 236 192 207 156 150
+    220  98 240 240 186 140\n 164 166 120  51 137 240  99 121 109 109 210  76 240
+    240  71 148\n  73 170 240 156 125 236 100 128  92 121 184  65 219 219  89 117\n
+    \ 85 186 217  52 152 150   5 142 101 106 184  61  74  51  77 144\n 216  53  50
+    120 237  29  78 197 168 103 184  51 213 187  74 150\n 240 226 180 240 237 223
+    232 240 162 115 206  72 231 240 117 150\n 240 240 240 240 240 240 240 240 186
+    225 216 186 240 240 156 225\n 240 240 240 240 240 240 240 240 240 240 240 240
+    240 240 240 229\n 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240
+    232\n 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 236\n 240 240
+    240 240 240 240 240 240 240 240 240 240 240 240 240 234\n 240 240 240 240 240
+    240 240 240 240 240 240 240 240 240 240 236\n 240 240 240 240 240 240 240 240
+    240 240 240 240 240 240 240 240\n 240 240 240 240 240 240 240 240 240 240 240
+    240 240 240 240 227\n 240 240 240 240 240 240 240 240 240 240 240 240 240 240
+    240 229\n 240 240 240 240 238 240 236 240 235 240 234 240 233 240 235 235\n 209
+    175  77 152 230 235 178 206 154 141 220  98 240 240 189 149\n 155 153 118  51
+    137 232  95 121 108  85 201  76 240 240  86 155\n  72 163 240 155 125 237 107
+    128 101 109 179  58 219 219  98 127\n  85 186 217  45 150 151  17 148 110 106
+    184  50  73  51  83 147\n 216  53  50 120 240  30  92 200 170 109 184  47 211
+    186  84 156\n 240 226 180 240 240 225 236 238 151 115 205  66 228 238 116 150\n
+    240 240 240 240 240 240 240 240 180 225 212 182 240 240 156 225\n 240 240 240
+    240 240 240 240 240 240 240 240 240 240 240 240 228\n 240 240 240 240 240 240
+    240 240 240 240 240 240 240 240 240 232\n 240 240 240 240 240 240 240 240 240
+    240 240 240 240 240 240 235\n 240 240 240 240 240 240 240 240 240 240 240 240
+    240 240 240 232\n 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240
+    234\n 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240 240\n 240 240
+    240 240 240 240 240 240 240 240 240 240 240 240 240 227\n 239 240 240 240 240
+    240 240 240 240 240 240 240 240 240 240 229\n 233 240 240 240 238 240 236 240
+    235 240 234 240 233 240 235 234\n\n 149 149 121 149 150 150 225 229 231 236 234
+    236 240 227 229 234\n 186  71  84  63  62 107 149 240 240 240 240 240 240 240
+    240 235\n 240 240 220  47 181 238 240 240 240 240 240 240 240 240 240 240\n 240
+    240 222  78 213 231 240 240 240 240 240 240 240 240 240 233\n  98  76  58  53
+    \ 62  75 186 240 240 240 240 240 240 240 240 240\n 219 210 180 184 187 208 216
+    240 240 240 240 240 240 240 240 234\n 135  98 121 113 113 115 225 240 240 240
+    240 240 240 240 240 240\n 152 109  92 101 169 147 174 240 240 240 240 240 240
+    240 240 235\n 207 122 128 142 197 238 240 240 240 240 240 240 240 240 240 240\n
+    191 108 109   5  72 228 240 240 240 240 240 240 240 240 240 237\n 236 240 237
+    150  29 223 240 240 240 240 240 240 240 240 240 240\n 227 129 124 150 237 226
+    237 240 240 240 240 240 240 240 240 238\n 152  51 155  45 120 237 238 240 240
+    240 240 240 240 240 240 240\n  77 119 232 217  50 180 240 240 240 240 240 240
+    240 240 240 240\n 175 161 161 186  53 226 240 240 240 240 240 240 240 240 240
+    240\n 209 155  64  83 207 240 240 240 240 240 240 240 240 239 228 232\n 140 148
+    117 144 150 150 225 229 232 236 234 236 240 227 229 235\n 186  71  89  77  74
+    117 156 240 240 240 240 240 240 240 240 235\n 240 240 219  51 187 240 240 240
+    240 240 240 240 240 240 240 240\n 240 240 219  74 213 231 240 240 240 240 240
+    240 240 240 240 233\n  98  76  65  61  51  72 186 240 240 240 240 240 240 240
+    240 240\n 220 210 184 184 184 206 216 240 240 240 240 240 240 240 240 234\n 150
+    109 121 106 103 115 225 240 240 240 240 240 240 240 240 240\n 156 109  92 101
+    168 162 186 240 240 240 240 240 240 240 240 235\n 207 121 128 142 197 240 240
+    240 240 240 240 240 240 240 240 240\n 192  99 100   5  78 232 240 240 240 240
+    240 240 240 240 240 236\n 236 240 236 150  29 223 240 240 240 240 240 240 240
+    240 240 240\n 230 137 125 152 237 237 240 240 240 240 240 240 240 240 240 238\n
+    152  51 156  52 120 240 240 240 240 240 240 240 240 240 240 240\n  77 120 240
+    217  50 180 240 240 240 240 240 240 240 240 240 240\n 176 166 170 186  53 226
+    240 240 240 240 240 240 240 240 240 240\n 212 164  73  85 216 240 240 240 240
+    240 240 240 240 240 240 240\n 149 155 127 147 156 150 225 228 232 235 232 234
+    240 227 229 234\n 189  86  98  83  84 116 156 240 240 240 240 240 240 240 240
+    235\n 240 240 219  51 186 238 240 240 240 240 240 240 240 240 240 240\n 240 240
+    219  73 211 228 240 240 240 240 240 240 240 240 240 233\n  98  76  58  50  47
+    \ 66 182 240 240 240 240 240 240 240 240 240\n 220 201 179 184 184 205 212 240
+    240 240 240 240 240 240 240 234\n 141  85 109 106 109 115 225 240 240 240 240
+    240 240 240 240 240\n 154 108 101 110 170 151 180 240 240 240 240 240 240 240
+    240 235\n 206 121 128 148 200 238 240 240 240 240 240 240 240 240 240 240\n 178
+    \ 95 107  17  92 236 240 240 240 240 240 240 240 240 240 236\n 235 232 237 151
+    \ 30 225 240 240 240 240 240 240 240 240 240 240\n 230 137 125 150 240 240 240
+    240 240 240 240 240 240 240 240 238\n 152  51 155  45 120 240 240 240 240 240
+    240 240 240 240 240 240\n  77 118 240 217  50 180 240 240 240 240 240 240 240
+    240 240 240\n 175 153 163 186  53 226 240 240 240 240 240 240 240 240 240 240\n
+    209 155  72  85 216 240 240 240 240 240 240 240 240 240 239 233\n\n"
   PatternWidth: .0799999982
   BarcodeID: 0
   MultiConfigFile: 
@@ -2743,3 +3056,31 @@ MonoBehaviour:
   currentFilterSampleRate: 30
   currentFilterCutoffFreq: 15
   currentNFTScale: 1
+--- !u!1 &2143764012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100016, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2143764013}
+  m_Layer: 0
+  m_Name: Bone.007
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2143764013
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400016, guid: 46fb2abbf4878da48870b4184fea976b, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2143764012}
+  m_LocalRotation: {x: -.163633585, y: .154692098, z: -.669330835, w: .70801878}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .999999881, y: .999999881, z: .99999994}
+  m_Children:
+  - {fileID: 892604269}
+  m_Father: {fileID: 630106369}
+  m_RootOrder: 1
