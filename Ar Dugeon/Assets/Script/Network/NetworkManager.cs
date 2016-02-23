@@ -19,8 +19,12 @@ public class NetworkManager : Photon.PunBehaviour
     private ListRooms _listRooms;
     private ListModels _listModels;
 
+    private UIManagerLobby uiManager;
     public List<string[]> playersData;
     public string[] data;
+
+    public List<string[]> MarkersData;
+    public string[] markerData;
     public Transform panel;
     private List<GameObject> playerList;
 
@@ -31,8 +35,12 @@ public class NetworkManager : Photon.PunBehaviour
         PhotonNetwork.logLevel = PhotonLogLevel.Full;
         _listRooms = canvas.GetComponent<ListRooms>();
         _listModels = canvas.GetComponent<ListModels>();
+        uiManager = GetComponent<UIManagerLobby>();
         playersData = new List<string[]>();
-        data = new string[3];
+        data = new string[2];
+
+        MarkersData = new List<string[]>();
+        markerData = new string[2];
         feedback.text = "";
         feedback.GetComponent<Text>().color = Color.red;
     }
@@ -47,8 +55,8 @@ public class NetworkManager : Photon.PunBehaviour
         if(roomName.text != "" && playerName.text != "" && nbPlayers.text != "" && !inRoom)
         {
             int nb = int.Parse(nbPlayers.text);
-            PhotonNetwork.CreateRoom(roomName.text, new RoomOptions() { maxPlayers = 0 }, null);
-           
+            byte value = (byte)nb;
+            PhotonNetwork.CreateRoom(roomName.text, new RoomOptions() { maxPlayers = value }, null);
             PhotonNetwork.player.name = playerName.text;
             inRoom = true;
             feedback.text = ""; 
@@ -81,38 +89,31 @@ public class NetworkManager : Photon.PunBehaviour
     }
     public void LoadScene()
     {
+        int nbChilds = panel.childCount;
+        for (int i = 0; i < nbChilds; i++)
+        {
+            Transform playerObject = panel.GetChild(i);
+            string name = playerObject.GetComponentInChildren<Text>().text;
+            string nameMarker = playerObject.GetComponentInChildren<Dropdown>().captionText.text;
+            markerData[0] = name;
+            markerData[1] = nameMarker;
+
+            MarkersData.Add(markerData);
+        }
         this.photonView.RPC("LoadSceneForEach", PhotonTargets.All);
     }
 
     [PunRPC]
     void LoadSceneForEach(PhotonMessageInfo info)
     {
+        uiManager.enabled = false;
         Application.LoadLevel("Main_Scene");
         data[0] = PhotonNetwork.playerName;
-        data[1] = _listModels.selectedModelName;
+        data[1] = uiManager.ModelName;
         playersData.Add(data);
         Debug.Log(string.Format("Info: {0} {1} {2}", info.sender, info.photonView, info.timestamp));
     }
-
-    public override void OnJoinedRoom()
-    {
-        PhotonNetwork.room.maxPlayers = int.Parse(nbPlayers.text);
-    }
-    public override void OnJoinedLobby()
-    {
-        //PhotonNetwork.JoinRandomRoom();
-    }
-
-    public override void OnReceivedRoomListUpdate()
-    {
-        Debug.Log("OnreceiveRoomList");
-    }
-
-    void OnPhotonRandomJoinFailed()
-    {
-        Debug.Log("Can't join random room!");
-    }
-
+    
     public override void OnPhotonPlayerConnected(PhotonPlayer newPlayer)
     {
         GameObject gameobject = (GameObject)Instantiate(Resources.Load("PlayerObject"));

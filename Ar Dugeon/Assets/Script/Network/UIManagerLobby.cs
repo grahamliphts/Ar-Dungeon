@@ -12,12 +12,18 @@ public class UIManagerLobby : MonoBehaviour
     public GameObject clientPanel;
     public Text NbPlayers;
     public Text PlayerName;
-    // Use this for initialization
+    public string ModelName;
+    public Dropdown ModelDrop;
     void Start ()
     {
         networkScript = GetComponent<NetworkManager>();
+        ModelName = ModelDrop.captionText.text;
     }
 	
+    public void OnModelChange()
+    {
+        ModelName = ModelDrop.captionText.text;
+    }
 	// Update is called once per frame
 	void Update ()
     {
