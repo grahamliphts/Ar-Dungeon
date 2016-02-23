@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 486258}
   - 95: {fileID: 9502772}
+  - 114: {fileID: 11441710}
   m_Layer: 10
   m_Name: Golem
   m_TagString: Untagged
@@ -634,6 +635,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11441710
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6689183bd744494e80c1de2f67c1969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!137 &13758900
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

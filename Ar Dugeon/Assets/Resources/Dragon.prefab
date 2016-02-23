@@ -76,6 +76,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 491092}
+  - 114: {fileID: 11438182}
   m_Layer: 10
   m_Name: Dragon
   m_TagString: Untagged
@@ -720,6 +721,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173494}
   m_Mesh: {fileID: 4300016, guid: a961b53f328496d45b4234d242857f00, type: 3}
+--- !u!114 &11438182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6689183bd744494e80c1de2f67c1969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

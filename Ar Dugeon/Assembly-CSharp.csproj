@@ -156,11 +156,14 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
      <Compile Include="Assets\Script\Bag_management.cs" />
      <Compile Include="Assets\Script\LobbyManager.cs" />
+     <Compile Include="Assets\Script\Network\LinkModelsMakers.cs" />
      <Compile Include="Assets\Script\Network\ListMap.cs" />
      <Compile Include="Assets\Script\Network\ListModels.cs" />
      <Compile Include="Assets\Script\Network\ListPlayers.cs" />
      <Compile Include="Assets\Script\Network\ListRooms.cs" />
      <Compile Include="Assets\Script\Network\NetworkManager.cs" />
+     <Compile Include="Assets\Script\Network\SetActive.cs" />
+     <Compile Include="Assets\Script\Network\SetParenting.cs" />
      <Compile Include="Assets\Script\Network\UIManagerLobby.cs" />
      <Compile Include="Assets\Script\UI_Manager.cs" />
      <None Include="Assets\ARToolKit5-Unity\Resources\ardata\markers\patt.myhiro.txt" />
