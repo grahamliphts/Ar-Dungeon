@@ -123,6 +123,9 @@ public class NetworkManager : Photon.PunBehaviour
         {
             GameObject gameobject = GameObject.Instantiate(Resources.Load(modelName), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
             gameobject.transform.SetParent(marker, false);
+            gameobject.transform.localPosition = new Vector3(0, 0, 0);
+            gameobject.transform.localRotation = Quaternion.Euler(270, 0, 0);
+            gameObject.gameObject.SetActive(false);
         }
     }
 
