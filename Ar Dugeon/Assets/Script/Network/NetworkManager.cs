@@ -8,7 +8,6 @@ using System.Collections.Generic;
 
 public class NetworkManager : Photon.PunBehaviour
 {
-
     public Text connectionParameters;
     public Text playerName;
     public Text roomName;
@@ -25,6 +24,7 @@ public class NetworkManager : Photon.PunBehaviour
     public List<string[]> MarkersData;
     public string[] markerData;
     public Transform panel;
+    public Transform objectsMasterPanel;
     private List<GameObject> playerList;
 
     void Start ()
@@ -99,6 +99,21 @@ public class NetworkManager : Photon.PunBehaviour
             MarkersData.Add(markerData);
         }
         this.photonView.RPC("LoadSceneForEach", PhotonTargets.All);
+    }
+
+
+    public void LoadObjectsMaster()
+    {
+        int nbChilds = objectsMasterPanel.childCount;
+        for (int i = 0; i < nbChilds; i++)
+        {
+            Transform masterObject = panel.GetChild(i);
+            string name = masterObject.GetComponentInChildren<Dropdown>().captionText.text;
+            string nameMarker = masterObject.GetComponentInChildren<Dropdown>().captionText.text;
+            markerData[0] = name;
+            markerData[1] = nameMarker;
+            MarkersData.Add(markerData);
+        }
     }
 
     [PunRPC]
