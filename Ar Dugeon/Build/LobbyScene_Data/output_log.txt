@@ -18,16 +18,18 @@ Platform assembly: D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\UnityEng
 Loading D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+Platform assembly: D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\websocket-sharp.dll (this message is harmless)
+Loading D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\websocket-sharp.dll into Unity Child Domain
 Platform assembly: D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.150 seconds
+- Completed reload, in  0.189 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: D:\ARDungeon\Ar Dugeon\Build\LobbyScene_Data\Managed\System.dll (this message is harmless)
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 29a0 -> priority: 1 
-  Thread -> id: 355c -> priority: 1 
+  Thread -> id: 3e54 -> priority: 1 
+  Thread -> id: 5b4c -> priority: 1 
 OnStatusChanged: Connect
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
@@ -80,7 +82,23 @@ OnreceiveRoomList
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-OperationResponse 227: ReturnCode: 0.
+OnEvent: Event 226.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+OnEvent: Event 229.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+OnreceiveRoomList
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+OnEvent: Event 226.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+OperationResponse 226: ReturnCode: 0.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -104,7 +122,7 @@ OperationResponse 230: ReturnCode: 0.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-OperationResponse 227: ReturnCode: 0.
+OperationResponse 226: ReturnCode: 0.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
@@ -112,43 +130,18 @@ OnEvent: Event 255.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
 
-OnEvent: Event 255.
+FormatException: Input string was not in the correct format
+  at System.Int32.Parse (System.String s) [0x00000] in <filename unknown>:0 
+  at NetworkManager.OnJoinedRoom () [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[])
+NetworkingPeer:OnEvent(EventData)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update()
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Sending RPC "LoadSceneForEach" to All
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Received RPC: LoadSceneForEach
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-Info: #01(master) View (0)1 on NetworkManager (scene) 1727437.983
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1649)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-PUN-instantiated 'NetworkManager' got destroyed by engine. This is OK when loading levels. Otherwise use: PhotonNetwork.Destroy().
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-UnloadTime: 3.751387 ms
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 759.
-Total: 0.880705 ms (FindLiveObjects: 0.073819 ms CreateObjectMapping: 0.041844 ms MarkObjects: 0.750830 ms  DeleteObjects: 0.013816 ms)
-
-OnEvent: Event 254.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
-
-HandleEventLeave for player ID: 2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+(Filename:  Line: -1)
 
 OnStatusChanged: Disconnect
  

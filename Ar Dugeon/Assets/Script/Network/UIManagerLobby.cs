@@ -9,6 +9,7 @@ public class UIManagerLobby : MonoBehaviour
     public GameObject waitPanel;
 
     public GameObject masterPanel;
+    public GameObject clientPanel;
     public Text NbPlayers;
     public Text PlayerName;
     // Use this for initialization
@@ -20,8 +21,11 @@ public class UIManagerLobby : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        int maxPlayers = 0;
         int nbPlayers = PhotonNetwork.playerList.Length;
-        NbPlayers.text = nbPlayers + "/4";
+        if(PhotonNetwork.room != null)
+            maxPlayers = PhotonNetwork.room.maxPlayers;
+        NbPlayers.text = nbPlayers + "/" + maxPlayers.ToString();
         PlayerName.text = PhotonNetwork.playerName;
         if (networkScript.inRoom)
         {
@@ -35,8 +39,14 @@ public class UIManagerLobby : MonoBehaviour
         }
 
         if (PhotonNetwork.isMasterClient)
+        {
             masterPanel.SetActive(true);
-        else 
+            clientPanel.SetActive(false);
+        }
+        else
+        {
             masterPanel.SetActive(false);
+            clientPanel.SetActive(true);
+        }
     }
 }
