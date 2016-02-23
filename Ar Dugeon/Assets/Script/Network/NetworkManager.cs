@@ -9,6 +9,7 @@ public class NetworkManager : Photon.PunBehaviour
     public Text connectionParameters;
     public Text playerName;
     public Text roomName;
+    public Text nbPlayers;
     public Text feedback;
     public bool inRoom = false;
     public Canvas canvas;
@@ -30,19 +31,21 @@ public class NetworkManager : Photon.PunBehaviour
 
     public void CreateRoom()
     {
-        if(roomName.text != "" && playerName.text != "" && !inRoom)
+        if(roomName.text != "" && playerName.text != "" && nbPlayers.text != "" && !inRoom)
         {
-            PhotonNetwork.CreateRoom(roomName.text, new RoomOptions() { maxPlayers = 4 }, null);
+            PhotonNetwork.CreateRoom(roomName.text, new RoomOptions() { maxPlayers = int.Parse(nbPlayers)}, null);
             PhotonNetwork.player.name = playerName.text;
             inRoom = true;
             feedback.text = ""; 
         }
-        if(roomName.text == "" && playerName.text == "")
-            feedback.text = "Enter a player name and a room name";
+        if(roomName.text == "" && playerName.text == "" && nbPlayers.text == "")
+            feedback.text = "Enter a player name, a room name and the number of players";
         else if (playerName.text == "" )
             feedback.text = "Enter a player name";
         else if (roomName.text == "")
             feedback.text = "Enter a room name";
+        else if (nbPlayers.text == "")
+            feedback.text = "Enter number of players";
     }
     
     public void JoinRoom()
