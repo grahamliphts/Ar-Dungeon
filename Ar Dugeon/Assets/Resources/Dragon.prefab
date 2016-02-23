@@ -76,8 +76,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 491092}
-  - 114: {fileID: 11497394}
-  - 114: {fileID: 11499918}
   m_Layer: 10
   m_Name: Dragon
   m_TagString: Untagged
@@ -722,43 +720,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173494}
   m_Mesh: {fileID: 4300016, guid: a961b53f328496d45b4234d242857f00, type: 3}
---- !u!114 &11497394
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ownerId: 0
-  group: 0
-  prefixBackup: -1
-  observed: {fileID: 0}
-  synchronization: 3
-  onSerializeTransformOption: 3
-  onSerializeRigidBodyOption: 2
-  ownershipTransfer: 0
-  ObservedComponents:
-  - {fileID: 11499918}
-  ObservedComponentsFoldoutOpen: 1
-  viewIdField: 0
-  instantiationId: -1
-  isRuntimeInstantiated: 0
---- !u!114 &11499918
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7e1e191e7f83d348bc4f26d0d47305a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameMarker: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -769,7 +730,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: ObservedComponents.Array.data[0]
       value: 
-      objectReference: {fileID: 11499918}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 153832}

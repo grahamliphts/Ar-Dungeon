@@ -123,7 +123,7 @@ public class NetworkManager : Photon.PunBehaviour
         {
             GameObject gameobject = GameObject.Instantiate(Resources.Load(modelName)) as GameObject;
             gameobject.transform.SetParent(marker, false);
-            gameObject.gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 
@@ -141,7 +141,7 @@ public class NetworkManager : Photon.PunBehaviour
         {
             GameObject gameobject = GameObject.Instantiate(Resources.Load(modelName)) as GameObject;
             gameobject.transform.SetParent(marker, false);
-            gameObject.gameObject.SetActive(false);
+            gameObject.SetActive(false);
             this.photonView.RPC("SetParenting", PhotonTargets.Others, nameMarker, modelName);
         }
     }
