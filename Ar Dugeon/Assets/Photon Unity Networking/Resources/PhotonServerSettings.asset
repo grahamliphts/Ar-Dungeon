@@ -37,4 +37,5 @@ MonoBehaviour:
   - LoadModelMarker
   - SetParenting
   - LoadField
+  - LoadObjectServer
   DisableAutoOpenWizard: 1

@@ -171,6 +171,20 @@ public class NetworkManager : Photon.PunBehaviour
         }
     }
 
+    [PunRPC]
+    void LoadObjectServer(string markerName, string objectName)
+    {
+        Transform marker = null;
+        GameObject sceneRoot = GameObject.Find("Scene root");
+        marker = sceneRoot.transform.Find(markerName);
+
+        if (marker != null)
+        {
+            GameObject gameobject = GameObject.Instantiate(Resources.Load(objectName)) as GameObject;
+            gameobject.transform.SetParent(marker, false);
+        }
+    }
+
     public override void OnPhotonPlayerConnected(PhotonPlayer newPlayer)
     {
         GameObject gameobject = (GameObject)Instantiate(Resources.Load("PlayerObject"));
