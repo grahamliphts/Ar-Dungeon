@@ -23,23 +23,26 @@ public class ListPlayers : MonoBehaviour
 
     public void PopulateNameList()
     {
-        int i = 0;
-        PhotonPlayer[] players = PhotonNetwork.playerList;
-
-        for (int j = 0; j < playerList.Count; j++)
+        if(PhotonNetwork.isMasterClient)
         {
-            Destroy(playerList[j]);
-        }
-        playerList.Clear();
+            int i = 0;
+            PhotonPlayer[] players = PhotonNetwork.playerList;
 
-        for (i = 0; i < players.Length; i++)
-        {
-            if(players[i].name != PhotonNetwork.playerName)
+            for (int j = 0; j < playerList.Count; j++)
             {
-                GameObject gameobject = (GameObject)Instantiate(Resources.Load("PlayerName"));
-                playerList.Add(gameobject);
-                gameobject.transform.SetParent(panel, false);
-                gameobject.GetComponent<Text>().text = players[i].name;
+                Destroy(playerList[j]);
+            }
+            playerList.Clear();
+
+            for (i = 0; i < players.Length; i++)
+            {
+                if (players[i].name != PhotonNetwork.playerName)
+                {
+                    GameObject gameobject = (GameObject)Instantiate(Resources.Load("PlayerObject"));
+                    playerList.Add(gameobject);
+                    gameobject.transform.SetParent(panel, false);
+                    gameobject.GetComponentInChildren<Text>().text = players[i].name;
+                }
             }
         }
     }
