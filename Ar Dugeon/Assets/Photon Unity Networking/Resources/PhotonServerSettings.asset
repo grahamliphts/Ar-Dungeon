@@ -34,4 +34,6 @@ MonoBehaviour:
   - RequestForPickupTimes
   - LoadSceneForEach
   - SendModel
+  - LoadModelMarker
+  - SetParenting
   DisableAutoOpenWizard: 1

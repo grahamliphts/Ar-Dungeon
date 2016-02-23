@@ -47,7 +47,7 @@ public class NetworkManager : Photon.PunBehaviour
 
 	void Update ()
     {
-        connectionParameters.text = PhotonNetwork.connectionStateDetailed.ToString();
+        //connectionParameters.text = PhotonNetwork.connectionStateDetailed.ToString();
     }
 
     public void CreateRoom()
@@ -107,13 +107,56 @@ public class NetworkManager : Photon.PunBehaviour
     void LoadSceneForEach(PhotonMessageInfo info)
     {
         uiManager.enabled = false;
-        Application.LoadLevel("Main_Scene");
+        Application.LoadLevel("MainScene");
         data[0] = PhotonNetwork.playerName;
         data[1] = uiManager.ModelName;
         playersData.Add(data);
         Debug.Log(string.Format("Info: {0} {1} {2}", info.sender, info.photonView, info.timestamp));
     }
-    
+
+    [PunRPC]
+    void SetParenting(string nameMarker, string modelName)
+    {
+        GameObject sceneRoot = GameObject.Find("Scene root");
+        Transform marker = sceneRoot.transform.Find(nameMarker);
+        if (marker != null)
+        {
+            GameObject gameobject = GameObject.Instantiate(Resources.Load(modelName), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+            gameobject.transform.SetParent(marker, false);
+        }
+    }
+
+    [PunRPC]
+    void LoadModelMarker(string playerName, string modelName)
+    {
+        Transform marker = null;
+        string nameMarker = "";
+
+        GameObject sceneRoot = GameObject.Find("Scene root");
+        nameMarker = FindMarker(playerName);
+        marker = sceneRoot.transform.Find(nameMarker);
+
+        if(marker != null)
+        {
+            GameObject gameobject = GameObject.Instantiate(Resources.Load(modelName), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+
+           // gameObject.GetComponent<SetParenting>().nameMarker = nameMarker;
+            gameobject.transform.SetParent(marker, false);
+            gameObject.gameObject.SetActive(false);
+            this.photonView.RPC("SetParenting", PhotonTargets.Others, nameMarker, modelName);
+        }
+    }
+
+    private string FindMarker(string name)
+    {
+        for(int i = 0; i < MarkersData.Count; i++)
+        {
+            if (MarkersData[i][0] == name)
+                return MarkersData[i][1];
+        }
+
+        return null;
+    }
     public override void OnPhotonPlayerConnected(PhotonPlayer newPlayer)
     {
         GameObject gameobject = (GameObject)Instantiate(Resources.Load("PlayerObject"));
