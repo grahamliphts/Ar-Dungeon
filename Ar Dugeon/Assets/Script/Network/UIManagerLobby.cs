@@ -13,18 +13,27 @@ public class UIManagerLobby : MonoBehaviour
     public Text NbPlayers;
     public Text PlayerName;
     public string ModelName;
+    public string FieldName;
     public Dropdown ModelDrop;
+    public Dropdown FieldDrop;
     void Start ()
     {
         networkScript = GetComponent<NetworkManager>();
         ModelName = ModelDrop.captionText.text;
+        FieldName = FieldDrop.captionText.text;
     }
 	
     public void OnModelChange()
     {
         ModelName = ModelDrop.captionText.text;
+       
     }
-	// Update is called once per frame
+
+    public void OnFieldChange()
+    {
+        FieldName = FieldDrop.captionText.text;
+    }
+
 	void Update ()
     {
         int maxPlayers = 0;

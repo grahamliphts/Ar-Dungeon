@@ -36,4 +36,5 @@ MonoBehaviour:
   - SendModel
   - LoadModelMarker
   - SetParenting
+  - LoadField
   DisableAutoOpenWizard: 1

@@ -20,8 +20,7 @@ public class NetworkManager : Photon.PunBehaviour
     private ListModels _listModels;
 
     private UIManagerLobby uiManager;
-    public List<string[]> playersData;
-    public string[] data;
+    public string[] playerData;
 
     public List<string[]> MarkersData;
     public string[] markerData;
@@ -36,8 +35,7 @@ public class NetworkManager : Photon.PunBehaviour
         _listRooms = canvas.GetComponent<ListRooms>();
         _listModels = canvas.GetComponent<ListModels>();
         uiManager = GetComponent<UIManagerLobby>();
-        playersData = new List<string[]>();
-        data = new string[2];
+        playerData = new string[2];
 
         MarkersData = new List<string[]>();
         markerData = new string[2];
@@ -108,9 +106,11 @@ public class NetworkManager : Photon.PunBehaviour
     {
         uiManager.enabled = false;
         Application.LoadLevel("MainScene");
-        data[0] = PhotonNetwork.playerName;
-        data[1] = uiManager.ModelName;
-        playersData.Add(data);
+        playerData[0] = PhotonNetwork.playerName;
+        if(PhotonNetwork.isMasterClient)
+            playerData[1] = uiManager.FieldName;
+        else
+            playerData[1] = uiManager.ModelName;
         Debug.Log(string.Format("Info: {0} {1} {2}", info.sender, info.photonView, info.timestamp));
     }
 
@@ -156,6 +156,21 @@ public class NetworkManager : Photon.PunBehaviour
 
         return null;
     }
+
+    [PunRPC]
+    void LoadField(string fieldName)
+    {
+        Transform marker = null;
+        GameObject sceneRoot = GameObject.Find("Scene root");
+        marker = sceneRoot.transform.Find("Field");
+
+        if (marker != null)
+        {
+            GameObject gameobject = GameObject.Instantiate(Resources.Load(fieldName)) as GameObject;
+            gameobject.transform.SetParent(marker, false);
+        }
+    }
+
     public override void OnPhotonPlayerConnected(PhotonPlayer newPlayer)
     {
         GameObject gameobject = (GameObject)Instantiate(Resources.Load("PlayerObject"));

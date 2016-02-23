@@ -5,6 +5,7 @@ public class LinkModelsMakers : MonoBehaviour
 {
     NetworkManager networkManager;
     string modelName;
+    string fieldName;
     bool find;
 
     void Start ()
@@ -14,12 +15,18 @@ public class LinkModelsMakers : MonoBehaviour
         if(!PhotonNetwork.isMasterClient)
         {
             networkManager = manager.GetComponent<NetworkManager>();
-            string playerName = networkManager.data[0];
-            modelName = networkManager.data[1];
-
+            string playerName = networkManager.playerData[0];
+            modelName = networkManager.playerData[1];
             networkManager.photonView.RPC("LoadModelMarker", PhotonTargets.MasterClient, playerName, modelName);
         }
-	}
+
+        else
+        {
+            networkManager = manager.GetComponent<NetworkManager>();
+            fieldName = networkManager.playerData[1];
+            networkManager.photonView.RPC("LoadField", PhotonTargets.All, fieldName);
+        }
+    }
 	
 	void Update ()
     {
