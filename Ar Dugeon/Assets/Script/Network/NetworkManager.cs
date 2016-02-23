@@ -121,10 +121,8 @@ public class NetworkManager : Photon.PunBehaviour
         Transform marker = sceneRoot.transform.Find(nameMarker);
         if (marker != null)
         {
-            GameObject gameobject = GameObject.Instantiate(Resources.Load(modelName), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+            GameObject gameobject = GameObject.Instantiate(Resources.Load(modelName)) as GameObject;
             gameobject.transform.SetParent(marker, false);
-            gameobject.transform.localPosition = new Vector3(0, 0, 0);
-            gameobject.transform.localRotation = Quaternion.Euler(270, 0, 0);
             gameObject.gameObject.SetActive(false);
         }
     }
@@ -141,9 +139,7 @@ public class NetworkManager : Photon.PunBehaviour
 
         if(marker != null)
         {
-            GameObject gameobject = GameObject.Instantiate(Resources.Load(modelName), new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
-
-           // gameObject.GetComponent<SetParenting>().nameMarker = nameMarker;
+            GameObject gameobject = GameObject.Instantiate(Resources.Load(modelName)) as GameObject;
             gameobject.transform.SetParent(marker, false);
             gameObject.gameObject.SetActive(false);
             this.photonView.RPC("SetParenting", PhotonTargets.Others, nameMarker, modelName);
