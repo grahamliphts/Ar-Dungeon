@@ -25,6 +25,13 @@ public class LinkModelsMakers : MonoBehaviour
             networkManager = manager.GetComponent<NetworkManager>();
             fieldName = networkManager.playerData[1];
             networkManager.photonView.RPC("LoadField", PhotonTargets.All, fieldName);
+            for(int i = 0; i < networkManager.ObjectMasterData.Count; i ++)
+            {
+                string objectName = networkManager.ObjectMasterData[i][0];
+                string markerName = networkManager.ObjectMasterData[i][1];
+                if(markerName != "None")
+                    networkManager.photonView.RPC("LoadObjectServer", PhotonTargets.All, objectName, markerName);
+            }
         }
     }
 	

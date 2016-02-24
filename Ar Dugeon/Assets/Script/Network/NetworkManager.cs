@@ -21,6 +21,7 @@ public class NetworkManager : Photon.PunBehaviour
     private UIManagerLobby uiManager;
     public string[] playerData;
 
+    public List<string[]> ObjectMasterData;
     public List<string[]> MarkersData;
     public string[] markerData;
     public Transform panel;
@@ -38,6 +39,8 @@ public class NetworkManager : Photon.PunBehaviour
         playerData = new string[2];
 
         MarkersData = new List<string[]>();
+        ObjectMasterData = new List<string[]>();
+
         markerData = new string[2];
         feedback.text = "";
         feedback.GetComponent<Text>().color = Color.red;
@@ -93,11 +96,10 @@ public class NetworkManager : Photon.PunBehaviour
             Transform playerObject = panel.GetChild(i);
             string name = playerObject.GetComponentInChildren<Text>().text;
             string nameMarker = playerObject.GetComponentInChildren<Dropdown>().captionText.text;
-            markerData[0] = name;
-            markerData[1] = nameMarker;
-
-            MarkersData.Add(markerData);
+            string[] modelData = new string[] { name, nameMarker };
+            MarkersData.Add(modelData);
         }
+        LoadObjectsMaster();
         this.photonView.RPC("LoadSceneForEach", PhotonTargets.All);
     }
 
@@ -107,12 +109,12 @@ public class NetworkManager : Photon.PunBehaviour
         int nbChilds = objectsMasterPanel.childCount;
         for (int i = 0; i < nbChilds; i++)
         {
-            Transform masterObject = panel.GetChild(i);
-            string name = masterObject.GetComponentInChildren<Dropdown>().captionText.text;
-            string nameMarker = masterObject.GetComponentInChildren<Dropdown>().captionText.text;
-            markerData[0] = name;
-            markerData[1] = nameMarker;
-            MarkersData.Add(markerData);
+            Transform masterObject = objectsMasterPanel.GetChild(i);
+            Transform child = masterObject.GetChild(0);
+            string name = masterObject.GetChild(0).GetChild(0).gameObject.GetComponent<Dropdown>().captionText.text;
+            string nameMarker = masterObject.GetChild(1).GetChild(0).gameObject.GetComponent<Dropdown>().captionText.text;
+            string[] objectData = new string[] {name, nameMarker};
+            ObjectMasterData.Add(objectData);
         }
     }
 
@@ -187,12 +189,11 @@ public class NetworkManager : Photon.PunBehaviour
     }
 
     [PunRPC]
-    void LoadObjectServer(string markerName, string objectName)
+    void LoadObjectServer(string objectName, string markerName)
     {
         Transform marker = null;
         GameObject sceneRoot = GameObject.Find("Scene root");
         marker = sceneRoot.transform.Find(markerName);
-
         if (marker != null)
         {
             GameObject gameobject = GameObject.Instantiate(Resources.Load(objectName)) as GameObject;
